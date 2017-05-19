@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>中国社会扶贫网</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/fpyshop.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="../js/jquery.min.js"></script>
+   <script src="../js/Addr.js"></script>
+  <script src="../js/fpyshop.js"></script>
+  <script type="text/javascript" src="../js/Scroll.js"></script>
+ <script src="../js/SaveDatas.js"></script>
+ <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?88f0084c90b1d1fe2a4f299fd358b450";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261694780'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261694780%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</head>
+<body>
+<!-- /header -->
+<div class="HeaderBox">
+  <header id="header" class="header">
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.png" alt="logo" width="100%" height="100%">
+    </a>
+    <div class="Rightbox">
+      <div class="Hellp">
+        <a href="help.html" class="HellpA">
+          <span><img src="../images/hellp.png" alt="" class="Hel"></span> 帮助中心</a>
+          <div class="Bangzhu">
+            <a href="/user/u002/ssologin.html" target="_back">登录</a>
+              <span class="LineS"></span>
+            <a href="/user/u001/register.html" target="_back">注册</a>
+          </div>
+      </div>
+      <div class="headerNav">
+        <a href="../index.html" class="">首页</a>
+        <span class="LineS"></span>
+        <a href="heart1.html" class="">爱心捐助</a>
+        <span class="LineS"></span>
+        <a href="fpsc.html" class="Index">扶贫商城</a>
+        <span class="LineS"></span>
+        <a href="zhongchou.html" class="">1017筹</a>
+        <span class="LineS"></span>
+        <a href="Exhibition.html" class="">扶贫展示</a>
+        <span class="LineS"></span>
+        <a href="../pjhtml/by-index.html" class="">榜样</a>
+        <span class="LineS"></span>
+        <a href="aboutm.html" class="">关于我们</a>
+      </div>
+    </div>
+  </header>
+</div>
+<div id="waper" class="waper">
+  <div id="address">
+    <span class="text">全部</span>
+    <span class="text">></span>
+    <select name="azc001" id="selProvince" style="width: 100px;padding-bottom: 2px" level="1" emptytext="请选择--省--" value=""><option value="">请选择--省--</option></select>
+    <select name="azc001" id="SHI" style="width: 100px;padding-bottom: 2px" level="1" emptytext="请选择--省--" value=""><option value="">请选择--市--</option></select>
+    
+    <select name="azc002" id="XIAN" style="width: 100px;padding-bottom: 2px" level="2" emptytext="请选择&#45;&#45;市&#45;&#45;" value=""><option value="">请选择--县--</option></select>
+    <!-- <select name="azc003" id="selCounty" style="width: 100px;padding-bottom: 2px" level="3" emptytext="请选择&#45;&#45;县&#45;&#45;" value=""></select> -->
+    <i>共<em id="totalID"></em>件相关产品</i>
+  </div>
+  <div id="select" class="msg">
+    <div id="shops">
+      <img class="imgs" src="../images/smshop.png" alt="房子">
+      <span>商城 ：</span>
+      <a class="" href="javascript:;" name="10"><img src="../images/sn.png" alt=""></a>
+      <a href="javascript:;" name="11"><img src="../images/jd.png" alt=""></a>
+      <a href="javascript:;" name="15"><img src="../images/ly.png" alt=""></a>
+      <a href="javascript:;" name="16"><img src="../images/gxe.png" alt=""></a>
+      <a href="javascript:;" name="20"><img src="../images/deyuanshangou.png" alt=""></a>
+    </div>
+  </div>
+  <div id="pl" class="msg">
+    <img src="../images/pl.png" alt="">
+    <span class="text">品类 ：</span>
+    <a id="qb" href="javascript:;" class="current item" name="">全部</a>
+    <a id="sx" href="javascript:;" class=" item" name="100000">生鲜类</a>
+    <a id="sc" href="javascript:;" class=" item" name="200000">蔬果类</a>
+    <a id="gg" href="javascript:;" class=" item" name="300000">干果类</a>
+    <a id="ly" href="javascript:;" class=" item" name="400000">粮油类</a>
+    <a id="qt" href="javascript:;" class=" item" name="900000">其他</a>
+  </div>
+  <div id="synth" class="msg">
+    <img src="../images/zh.png" alt="">
+    <span class="text">综合排序</span>
+    <select id="sales">
+      <option value="0">销量</option>
+      <option value="1">由高到低</option>
+      <option value="2">由低到高</option>
+    </select>
+    <select id="price">
+      <option value="0">价格</option>
+      <option value="1">由高到低</option>
+      <option value="2">由低到高</option>
+    </select>
+  </div>
+</div>
+<div id="main" class="waper">
+  <ul class="goods clearfix" id="goods">
+<!--    <li class="good">
+      <div class="ds-logo"><img src="../images/ds-logo.png" alt=""></div>
+      <a href=""><img src="../images/newReco-01.jpg" alt=""></a>
+      <p><a href="">【特色馆】大悟栗谷山土鸡蛋30枚礼盒装（珍珠棉防撞泡沫包装）</a></p>
+      <div class="bt-bar">
+        <span class="s1">¥</span>
+        <span class="s2">188</span>
+        <span class="s3">河北省</span>
+      </div>
+    </li>
+    <li class="good">
+      <div class="ds-logo"><img src="../images/ds-logo.png" alt=""></div>
+      <a href=""><img src="../images/newReco-02.jpg" alt=""></a>
+      <p><a href="">【特色馆】大悟栗谷山土鸡蛋30枚礼盒装（珍珠棉防撞泡沫包装）</a></p>
+      <div class="bt-bar">
+        <span class="s1">¥</span>
+        <span class="s2">188</span>
+        <span class="s3">河北省</span>
+      </div>
+    </li>
+    <li class="good">
+      <div class="ds-logo"><img src="../images/ds-logo.png" alt=""></div>
+      <a href=""><img src="../images/newReco-02.jpg" alt=""></a>
+      <p><a href="">【特色馆】大悟栗谷山土鸡蛋30枚礼盒装（珍珠棉防撞泡沫包装）</a></p>
+      <div class="bt-bar">
+        <span class="s1">¥</span>
+        <span class="s2">188</span>
+        <span class="s3">河北省</span>
+      </div>
+    </li>
+    <li class="good">
+      <div class="ds-logo"><img src="../images/ds-logo.png" alt=""></div>
+      <a href=""><img src="../images/newReco-02.jpg" alt=""></a>
+      <p><a href="">【特色馆】大悟栗谷山土鸡蛋30枚礼盒装（珍珠棉防撞泡沫包装）</a></p>
+      <div class="bt-bar">
+        <span class="s1">¥</span>
+        <span class="s2">188</span>
+        <span class="s3">河北省</span>
+      </div>
+    </li>
+    <li class="good">
+      <div class="ds-logo"><img src="../images/ds-logo.png" alt=""></div>
+      <a href=""><img src="../images/newReco-02.jpg" alt=""></a>
+      <p><a href="">【特色馆】大悟栗谷山土鸡蛋30枚礼盒装（珍珠棉防撞泡沫包装）</a></p>
+      <div class="bt-bar">
+        <span class="s1">¥</span>
+        <span class="s2">188</span>
+        <span class="s3">河北省</span>
+      </div>
+    </li>-->
+  </ul>
+  <div class="" id="bottom">
+    <a href="javascript:;" id="Shou">首页</a>
+    <a href="javascript:;" id="Shang">上一页</a>
+    <a href="javascript:;" id="ZZZZ"></a>
+    <a href="javascript:;" id="Xia">下一页</a>
+    <a href="javascript:;" id="Wei">尾页</a>
+  </div>
+</div>
+<div class="footer">
+  <footer class="footerBox">
+    <p class="LFriend">
+      <a target="_blank" href="http://www.cpad.gov.cn/">国务院扶贫办</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.xinhuanet.com/">新华网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.people.com.cn/">人民网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.zgfpkf.org.cn/">中国扶贫开发协会</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.gov.cn/">中国政府网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.radio.cn/">中国广播网</a>
+      <span>|</span>
+      <a target="_blank" href="http://api123.farmer.com.cn/">中国农业新闻网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.china.com.cn/">中国网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.gmw.cn/">光明网</a>
+      <span>|</span>
+      <a target="_blank" href="http://www.cri.cn/">国际在线</a>
+    </p>
+    <p class="Lzhidao">
+      指导单位：国务院扶贫办社会扶贫司、国务院扶贫办信息中心
+    </p>
+    <p>京ICP备16040855号-1　<span>北京帮一把网络科技有限公司 </span><span>|</span><span> 版权所有</span></p>
+  </footer>
+</div>
+<div class="Tanchu">
+    <img src="../images/u=1186843128,2828198429&fm=23&gp=0.jpg" alt="">
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

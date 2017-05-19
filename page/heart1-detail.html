@@ -1,0 +1,509 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-U-Compatible" type="text/css" content="IE=edge,Chrome=1">
+		<meta name="renderer" type="text/css" content="webkit">
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+	<link rel="stylesheet" href="../css/heartLis.css" type="text/css">
+	<link rel="stylesheet" href="../css/footer.css" type="text/css">
+	<link rel="stylesheet" href="../css/header.css" type="text/css">
+		<style type="text/css" media="screen">
+			body {
+  position: relative; }
+
+.pic-pos {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  z-index: 200000; }
+  .pic-pos .bg-pos {
+    width: 700px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.8) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 90px;
+    border-radius: 20px;
+    z-index: 10004; }
+  .pic-pos .pos-div {
+    position: absolute;
+    width: 500px;
+    height: 460px;
+    background: none no-repeat;
+    overflow: hidden; }
+    .pic-pos .pos-div #pos-img {
+      position: absolute;
+      width: 1500px;
+      height: 600px;
+      background: none no-repeat;
+      overflow: hidden;
+      left: 0;
+      border-radius: 5px;
+      z-index: 10034; }
+      .pic-pos .pos-div #pos-img .pos-1 {
+        position: absolute;
+        width: 500px;
+        height: 460px;
+        background: none no-repeat;
+        left: 0;
+        overflow: hidden; }
+        .pic-pos .pos-div #pos-img .pos-1 .img1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 700px;
+          height: 400px;
+          position: relative;
+          border-radius: 5px; }
+      .pic-pos .pos-div #pos-img .pos-2 {
+        position: absolute;
+        width: 500px;
+        height: 460px;
+        background: none no-repeat;
+        left: 500px;
+        overflow: hidden; }
+        .pic-pos .pos-div #pos-img .pos-2 .img2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 700px;
+          height: 400px;
+          position: relative;
+          border-radius: 5px;
+          z-index: 10034; }
+      .pic-pos .pos-div #pos-img .pos-3 {
+        position: absolute;
+        width: 500px;
+        height: 460px;
+        background: none no-repeat;
+        left: 1000px;
+        overflow: hidden; }
+        .pic-pos .pos-div #pos-img .pos-3 .img3 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 700px;
+          height: 400px;
+          position: relative;
+          z-index: 10034;
+          border-radius: 5px; }
+  .pic-pos .sign-left {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    width: 40px;
+    height: 72px;
+    background: url(../images/leftbtn.png) no-repeat;
+    margin-top: -36px;
+    z-index: 10010; }
+  .pic-pos .sign-right {
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    width: 40px;
+    height: 72px;
+    background: url(../images/right1.png) no-repeat;
+    margin-top: -36px;
+    z-index: 10010; }
+  .pic-pos .close {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 100%;
+    z-index: 10010; }
+		</style>
+		<title>中国扶贫网</title>
+		
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script src="../js/Addr.js"></script>
+		<script src="../js/Scroll.js"></script>
+		<script src='../js/SaveDatas.js'></script>
+		<script src="../js/heartList.js"></script>
+		<script src="../js/Addr.js"></script>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+  			var hm = document.createElement("script");
+  			hm.src = "https://hm.baidu.com/hm.js?88f0084c90b1d1fe2a4f299fd358b450";
+  			var s = document.getElementsByTagName("script")[0]; 
+  			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261694780'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261694780%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	</head>	
+	<body>
+	<div class="pic-pos">
+			<span class="sign-left"></span>
+			<div class="pos-div">
+			<div id="pos-img">
+				<!-- <div class="pos-1 ">
+					<img src="../images/banner.png" class="img1">
+				</div>
+				<div class="pos-2 ">
+					<img src="../images/banner.png" class="img2">
+				</div>
+				<div class="pos-3 ">
+					<img src="../images/banner.png" class="img3">
+				</div>
+				</div> -->
+			</div>
+			</div>
+			<span class="sign-right"></span>
+			<span class="close"></span>
+			<!-- <div class="bg-pos"></div> -->
+		
+	</div>
+		<div class="HeaderBox">
+			<header id="header" class="header">
+				<a href="../index.html" class="logo">
+					<img src="../images/logo.png" alt="logo" width="100%" height="100%">
+				</a>
+				<div class="Rightbox">
+					<div class="Hellp">
+						<a href="help.html" class="HellpA">
+						<span><img src="../images/hellp.png" alt="" class="Hel"></span> 帮助中心</a>
+						<div class="Bangzhu">
+							<a href="/user/u002/ssologin.html" target="_back">登录</a>
+								<span class="LineS"></span>
+							<a href="/user/u001/register.html" target="_back">注册</a>
+						</div>
+					</div>
+					<div class="headerNav">
+						<a href="../index.html" class="">首页</a>
+						<span class="LineS"></span>
+						<a href="heart1.html" class="Index">爱心捐助</a>
+						<span class="LineS"></span>
+						<a href="fpsc.html" class="">扶贫商城</a>
+						<span class="LineS"></span>
+						<a href="zhongchou.html" class="">1017筹</a>
+						<span class="LineS"></span>
+						<a href="Exhibition.html" class="lExh">扶贫展示</a>
+						<span class="LineS"></span>
+						<a href="../pjhtml/by-index.html" class="">榜样</a>
+						<span class="LineS"></span>
+						<a href="aboutm.html" class="">关于我们</a>
+					</div>
+				</div>
+		    </header>
+		</div>
+		<!-- header结束 -->
+		<!-- content开始 -->
+		<!--nav开始-->
+		<div class="nav">
+			<div class="navContent clearfix">
+				<div class="navContentleft">
+					<div class="navTop">
+						<span class="xq axxq">爱心需求</span>
+						<span class="axjz">爱心捐赠</span>
+					</div>
+					<div class="contentDatop">
+						<div class="CONTENATOP">
+							<a href="javascript:;" class="active Quanbu" name="" id="Qu">全部</a>
+						</div>
+						<div class="Leibie">
+							
+						</div>
+					</div>
+					<div class="main">
+						
+					</div>
+					<a href="javascript:;" class="More" id="sds">更多内容</a>
+				</div>
+
+
+				<div class="navContentright" style="padding-top: -12px;">
+					
+    					
+    			<div class="kun">
+    				<div class="divOne">
+						<span class="shang">
+							<span class="Sx">爱心捐赠</span>
+							<a href="javascript:;" id="Mores" class="more">更多></a>
+						</span>
+						
+	
+						<div class="Zbox">
+							
+						</div>
+
+
+						<!-- <span class="shang">
+							<span>爱心需求</span>
+							<a href="javascript:;">更多></a>
+						</span> -->
+						<!-- <div class="Jia">
+							<div class="JiaAi">
+								<img src="../images/wangchuncai.png" alt="" width="60" height="60">
+								<span>
+									<p>王小二</p>
+									<t>湖南尚永州市东安县</t>
+								</span>
+								<p class="kouqin">我想要 <t>口琴</t></p>
+								<p class="like">喜欢音乐，好心人送一个吧喜欢音乐，好心人送一个吧喜欢音乐，好心人送一个吧</p>
+							</div>
+							<div class="JiaAi">
+								<img src="../images/wangchuncai.png" alt="" width="60" height="60">
+								<span>
+									<p>王小二</p>
+									<t>湖南尚永州市东安县</t>
+								</span>
+								<p class="kouqin">我想要 <t>口琴</t></p>
+								<p class="like">喜欢音乐，好心人送一个吧喜欢音乐，好心人送一个吧喜欢音乐，好心人送一个吧</p>
+							</div>
+							
+						</div> -->
+					</div>
+    			</div>
+
+
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- content结束 -->
+		<!-- footer开始 -->
+	 <div class="footer" style="margin-top: 80px;">
+    	<footer class="footerBox">
+    		<p class="LFriend">
+    			<a href="http://www.cpad.gov.cn/" target="_back">国务院扶贫办</a>
+	    			<span>|</span>
+	    			<a href="http://www.xinhuanet.com/" target="_back">新华网</a>
+	    			<span>|</span>
+	    			<a href="http://www.people.com.cn/" target="_back">人民网</a>
+	    			<span>|</span>
+	    			<a href="http://www.zgfpkf.org.cn/" target="_back">中国扶贫开发协会</a>
+	    			<span>|</span>
+	    			<a href="http://www.gov.cn/" target="_back">中国政府网</a>
+	    			<span>|</span>
+	    			<a href="http://www.radio.cn/" target="_back">中国广播网</a>
+	    			<span>|</span>
+	    			<a href="http://api123.farmer.com.cn/" target="_back">中国农业新闻网</a>
+	    			<span>|</span>
+	    			<a href="http://www.china.com.cn/" target="_back">中国网</a>
+	    			<span>|</span>
+	    			<a href="http://www.gmw.cn/" target="_back">光明网</a>
+	    			<span>|</span>
+	    			<a href="http://www.cri.cn/" target="_back">国际在线</a>
+    		</p>
+    		<p class="Lzhidao">
+    			指导单位：国务院扶贫办社会扶贫司、国务院扶贫办信息中心
+    		</p>
+    		<p>京ICP备16040855号-1　<span>北京帮一把网络科技有限公司 </span><span>|</span><span> 版权所有</span></p>
+    	</footer>
+    </div>
+    <!-- footer结束 -->
+
+    <div class="tanchu">
+		<div class="motai">
+			<span class="xiazai">
+				<p>下载中国社会扶贫网客户端，继续操作</p>
+			</span>
+			<a href="javascript:;" id="del"></a>
+			<div class="ioss">
+				<p>扫描二维码下载</p>
+				<img src="../images/bu.png" alt="">
+			</div>
+			<div class="anzhuos">
+				<p>官方渠道下载</p>
+				<a href="http://www.zgshfp.com.cn/PovertyRelief/HelpLove.apk" target="_Blank"><img src="../images/anzhuo.png" alt=""></a>
+				<a href="javascript:return false;"><img src="../images/ios.png" alt=""></a>
+			</div>
+	</div>
+    </div>
+		
+<script type="text/javascript" src="../js/SaveDatas.js"></script>
+<script>
+	$(function(){
+		$('body').delegate('.neirongSpan>a','click',function(){
+			$('.tanchu').css({"display":"block"})
+		})
+		$('#del').click(function(){
+			$('.tanchu').css({"display":"none"})
+		})
+
+		function Move(W,H,num,obj,index){
+			this.back=$('.bg-pos')
+			this.father = $('.pic-pos');
+			this.left = $('.sign-left');
+			this.right = $('.sign-right');
+			this.pic = $('#pos-img');
+			this.out = $('.pos-div');
+			this.con1=$('.pos-1');
+			this.close = $('.close');
+			this.leftNum = 0;
+			this.index = index;
+			this.count = 0;
+			this.num = num
+			this.obj =obj;
+			this.W=W;
+			this.H=H;
+			this.onoff=true;
+			this.window = $(window).width()
+			this.init();
+		}
+
+		Move.prototype = {
+			constructor:Move,
+			init(){
+				var _this = this;
+					if(_this.count==(_this.obj.length)-1)_this.onoff=false;
+				_this.out.css({
+					left:($(window).width()-_this.W)/2,
+					top:($(window).height()-_this.W)/2,
+				});
+				console.log($('#pos-img div').length)
+				$('#pos-img').html('')
+				$('#pos-img').width(_this.W*_this.obj.length).height(_this.H)
+				_this.divCount(_this.obj.length,_this.index)
+				_this.close.on('click',_this.closed.bind(_this));
+				_this.left.on('click',_this.leftMove.bind(_this));
+				_this.right.on('click',_this.rightMove.bind(_this));
+			},
+			divCount(num,index){
+
+				var _this = this;
+				// _this.count = 0;
+					var t='';
+					// if(_this.count==(_this.obj.length)-1)_this.onoff=false;
+				for(var t=0;t<_this.obj.length;t++){
+					// console.log(_this.obj[t])
+
+					$('#pos-img').append($('<div></div>',{
+						html:'<img src="'+_this.obj[t]+'">',
+						style:'width:'+_this.W+'px;float:left;overflow:hidden;height：'+_this.H+'px'
+					}))
+				} 	
+				$('#pos-img img').width(_this.W).height(_this.H)
+				$('#pos-img ').css({
+					left:-_this.index*_this.W+'px'
+				})
+				_this.count = _this.index;
+			},
+			resetInfo(ele,num){//比较图片的宽高，高了重置为460 宽度超了限制为500
+				var _this = this;
+				if(ele.width()>ele.height()){
+					if(ele.width()>_this.W){
+						var t=ele.width()/_this.W;
+						ele.width(_this.W)
+						var m=ele.height();
+						$(ele).height(m/t);
+						_this.resetPos(ele,num);
+						return;
+					}
+				}else if(ele.width()<ele.height()) {
+					if(ele.height()>_this.H){
+						var t=ele.height()/_this.H;
+						ele.width(_this.H)
+						var m=ele.width();
+						$(ele).width(m/t);
+						_this.resetPos(ele,num);
+						return;
+					}
+				}
+			},
+			resetPos(ele,num){
+				var _this = this;
+				ele.css({
+					top:(_this.H-ele.height())/2+'px',
+					left:(_this.W-ele.width())/2+'px'
+				})
+			},
+			leftMove(){//左边按钮
+				var _this = this;
+				if($('#pos-img').is(':animated')) return
+				if(_this.count==0){
+					return;
+				}
+				var zh = $('#pos-img').css('left')
+				zh=zh.split('px').join('')
+				$('#pos-img').animate({
+					left:_this.W+Number(zh)+'px',
+				},600,function(){
+					_this.count--;
+					if(_this.count<($('#pos-img>div').length-1)){
+					_this.right.show();
+					return;
+				}
+				})
+				_this.onoff=true;
+			},
+			rightMove(){//右边按钮
+				var _this = this;
+				if(_this.onoff){
+				if($('#pos-img').is(':animated')) return
+					// console.log($('#pos-img').is(':animated'))
+				// if()
+				if(_this.count>=($('#pos-img>div').length-1)){
+					$('#pos-img').css('left',-(_this.obj.length-1)*(_this.W)+'px')
+					_this.count=$('#pos-img>div').length-1
+					return;
+				}
+				var m=$('#pos-img').css("left").split('px').join('')
+				var t=(_this.obj.length-1)*(_this.W)
+				if(m>=t) return
+				if($('#pos-img').css("left")>=(_this.obj.length-1)*(_this.W)) return
+				var fu = $('#pos-img').css('left')
+				fu=fu.split('px').join('')
+				// console.log(fu)
+				$('#pos-img').animate({
+					left:Number(fu)-_this.W+'px',
+				},600,function(){
+					_this.count++;
+					if(_this.count==(_this.obj.length)-1)_this.onoff=false;
+				})
+				}
+			},
+			closed(e){//关闭弹框
+				// console.log( e.target)_this.count = 0;
+				var _this = this;
+				_this.count = 0;
+				_this.father.hide();
+				_this.pic.css('left','0')
+			}
+		}
+
+
+		$('body').delegate('.Se','click',function(event){
+    			var hel = -1;
+    			console.log(event.target.nodeName == 'IMG')
+    			if(event.target.nodeName == 'IMG'){
+    				console.log($(event.target))
+    				var imgs=$(event.target).parent().find('img')
+    				var srcs = [];
+    				for(var i=0;i<imgs.length;i++){
+    					srcs.push(imgs[i].currentSrc)
+    				}
+    				 hel=$(this).index()
+    				 console.log(srcs)
+    				new Move(500,460,2,srcs,hel)
+    			}
+    			$('.pic-pos').css('display','block')
+    			console.log($('.pic-pos'))
+								
+			})
+	})
+
+
+
+
+
+</script>
+		
+	</body>
+</html> 

@@ -1,0 +1,532 @@
+* {
+  outline: none;
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}
+/*header*/
+#headers{
+  margin-top: 101px;
+  width: 100%;
+  height: 41px;
+  background-color: #cb403b;
+}
+#head{
+  width: 198px;
+  height: 20px;
+  background-color: #ec4d47;
+  text-align: right;
+  padding: 10px 0;
+  float: left;
+}
+#search{
+  float: right;
+  color: white;
+  line-height: 40px;
+  font-size: 14px;
+  margin-right: 6px;
+}
+#search .search-s{
+  font-size: 16px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 37px;
+  text-align: right;
+}
+#search select{
+  margin-left: 5px;
+  height: 24px;
+  width: 130px;
+}
+#search-z{
+  margin-left: 40px;
+  width: 200px;
+  height: 21px;
+  padding: 0 5px;
+}
+#search #ico{
+  margin-left: -5px;
+}
+#nav-h{
+  height: 20px;
+  background: url("../images/sprite.png") no-repeat 2px 2px;
+  width: 108px;
+  margin: 0 auto;
+}
+#nav-h span{
+  font-size: 17px;
+  color: #fff;
+  display: inline-block;
+}
+/* nav */
+#nav{
+  overflow: hidden;
+}
+#nav-left{
+  width: 198px;
+  height: 311px;
+  float: left;
+  background-color: #ec4d47;
+}
+#nav-list{
+  width: 180px;
+  padding: 0 9px;
+  text-align: right;
+}
+#nav-list li:hover{
+  background-color: #f46f3a;
+  margin: auto -10px;
+}
+#nav-list li{
+  height: 61px;
+  margin: auto 10px;
+  border-bottom: 1px solid #f46f6a;
+  text-align: center;
+}
+#nav-list li.border-top{
+  border-bottom: none;
+  border-top: 1px solid #cb403b;
+}
+#nav-list li.border-all{
+  border-top: 1px solid #f46f6a;
+}
+#nav-list li a{
+  font-size: 17px;
+  width: 98px;
+  height: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  text-indent: 45px;
+  padding-right: 10px;
+}
+#nav-list li:nth-child(1) a{
+  background-image: url('../images/sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+}
+#nav-list li:nth-child(2) a{
+  background: url('../images/sprite.png') no-repeat 0 -40px;
+}
+#nav-list li:nth-child(3) a{
+  background: url('../images/sprite.png') no-repeat 0 -60px;
+}
+#nav-list li:nth-child(4) a{
+  background: url('../images/sprite.png') no-repeat 0 -80px;
+  padding-left: -30px;
+}
+#nav-list li:nth-child(5) a{
+  background: url('../images/sprite.png') no-repeat 0 -100px;
+}
+
+/*banner*/
+#banner{
+  float: left;
+}
+#container {
+  width: 1002px;
+  height: 311px;
+  overflow: hidden;
+  position: relative;
+  /*相对定位*/
+}
+/*包含所有图片的<div>*/
+#list {
+  width: 5010px;
+  /*5张图片的宽: 5*1002 */
+  height: 311px;
+  position: absolute;
+  /*绝对定位*/
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+/*所有的图片<img>*/
+#list img {
+  width: 1002px;
+  height: 311px;
+  float: left;
+  /*浮在左侧*/
+}
+/*包含所有圆点按钮的<div>*/
+#btn-wrap {
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  z-index: 2;
+  border: 1px solid #C0BC23;
+  border-radius: 12px 12px 12px 12px;
+  padding: 6px;
+  bottom: 31px;
+  left: 50%;
+  background-color: rgba(229, 226, 126, 0.6);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#buttons{
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 11px;
+  margin-left: -34px;
+  margin-top: -5px;
+}
+/*所有的圆点<span>*/
+#buttons span {
+  cursor: pointer;
+  float: left;
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 5px;
+}
+/*第一个<span>*/
+#buttons .on {
+  width: 30px;
+  border-radius: 6px 6px 6px 6px;
+  background: #EC4D47;
+}
+/*切换图标<a>*/
+.arrow {
+  cursor: pointer;
+  display: none;
+  line-height: 39px;
+  text-align: center;
+  /*font-size: 36px;*/
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  top: 180px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+/*鼠标移到切换图标上时*/
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*鼠标移到整个div区域时*/
+#container:hover .arrow {
+  display: block;
+  /*显示*/
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*main*/
+#main{
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+/*main-left*/
+#main-left{
+  float: left;
+  width: 855px;
+}
+#main-left #goodsList ul{
+  overflow: hidden;
+}
+#main-left #goodsList{
+  padding: 18px 40px;
+  border: 1px solid #E7E8E9;
+  margin: 20px 0;
+}
+#main-left #goodsList ul li{
+  display: inline-block;
+  padding-left: 12px;
+  float: left;
+}
+#main-left #goodsList ul li:nth-child(2){
+  padding-left: 0;
+}
+#main-left #goodsList ul li.goodsCity{
+  padding: 0;
+  width: 198px;
+  text-align: center;
+}
+#main-left #goodsList ul li.goodsCity {
+  width: 80px;
+  display: inline-block;
+  color: #666;
+  padding-right: 10px;
+  padding-top: 6px;
+  text-align: right;
+  font-size: 15px;
+  height: 25px;
+  background: url('../images/sprite.png') no-repeat 2px -133px;
+}
+#main-left #goodsList ul li:nth-child(2){
+  margin-left: 27px;
+}
+#main-left #goodsList ul li a{
+  display: block;
+  font-size: 17px;
+  padding: 3px 16px 5px;
+}
+.sel{
+  border-radius: 5px;
+  background-color: #cb403b;
+  color: #fff;
+}
+/*new*/
+#new img{
+  width: 180px;
+  height: 135px;
+}
+.newReco{
+  height: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.newReco span{
+  color: #cd3f3b;
+  font-size: 17.5px;
+  padding-left: 10px;
+}
+.newReco span.reco{
+  background: url('../images/sprite.png') no-repeat 0 -162.1px;
+}
+.newReco span.more{
+  float: right;
+  font-size: 14px;
+}
+.newReco span a:hover{
+  color: #CB3F3A;
+}
+.newReco span.freshClass{
+  background: url('../images/sprite.png') no-repeat 0 -184px;
+}
+.newRecoList{
+  overflow: hidden;
+  padding-left: 1px;
+}
+.newRecoList li{
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+  float: left;
+  border: 1px solid #e7e8e9;
+  margin: 15px 0 0 15px;
+}
+.newRecoList .imgs{
+  width: 180px;
+  height: 135px;
+}
+.newRecoList li:last-child{
+  margin-right: 0;
+}
+.newRecoList li:first-child{
+  /*margin-right: 12px;*/
+  margin-left: 0;
+}
+.newRecoList li:nth-child(5){
+  margin-left: 0;
+}
+.newRecoList p.desc span.price{
+  color: #cd3f3b;
+  font-size: 16px;
+}
+.newRecoList p.desc span.rmb{
+  float: left;
+  left: 100px;
+  margin-right: 7px;
+}
+.newRecoList p.desc span.address{
+  float: right;
+}
+.newRecoList p.text{
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 6px 0 7px 0;
+}
+.newRecoList p.desc{
+  padding-left: 4px;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+.newReco span.floor{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0;
+  margin-left: -2px;
+  margin-right: 20px;
+}
+.border-b{
+  border-bottom: 1px solid #cb3f3a;
+}
+.margin-top{
+  margin-top: 20px;
+}
+
+#main-right{
+  float: right;
+  width: 294px;
+  height: 1500px;
+}
+#platform{
+  margin-top: 20px;
+}
+.commercePlat{
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+.commerce{
+  margin-bottom: 10px;
+}
+.commerce span{
+  font-size: 17px;
+  padding-left: 12px;
+}
+.commerce span.commercePlatB{
+  background: url('../images/sprite.png') no-repeat 0 -163px;
+  color: #666;
+}
+.platList{
+  border-bottom: 1px solid #eee;
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+.platList .jd{
+	width: 293px;
+	height: 247px;
+	overflow: hidden;
+	position: relative;
+}
+.shanggun{
+	width: 293px;
+	height: 247px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.platList .jd .JD{
+	width: 293px;
+	height: 123px;
+	display: block;
+	box-sizing: border-box;
+}
+.platList .jd .JD>img{
+	margin-top: 22px;
+	margin-left: 12px;
+	display: block;
+	float: left;
+}
+.platList .jd .JD>t{
+	float: left;
+	width: 120px;
+	box-sizing: border-box;
+	margin-left: 15px;
+	margin-top: 30px;
+	font-size: 16px;
+	color: #666666;
+}
+.platList .jd .JD>p{
+	float: left;
+	width: 120px;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #919090;
+	font-size: 14px;
+}
+
+/*.platList .wrapA{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.platList .wrapA .wrapB{
+  border-bottom: 1px solid #eee;
+}
+.platList .wrapA .wrapB .wrapS{
+  padding: 14px 14px 14px 12px;
+}
+.sn{
+  overflow: hidden;
+}
+.suDec{
+  float: left;
+  margin-top: 20px;
+}
+.platList .sn img{
+  border: 1px solid #eee;
+  margin-right: 15px;
+  float: left;
+}
+.platList .sn p:first-child{
+  font-size: 16px;
+  display: inline-block;
+  color: #666;
+  font-weight: bold;
+}
+.platList .sn p:last-child{
+  font-size: 14px;
+  margin-top: 12px;
+  color: #AEADAD;
+}*/
+/*span.sailPrice{
+  color: #cb3f3a;
+}*/
+/*shop*/
+#shop{
+  margin-top: 50px;
+}
+#shop .commercePlat{
+  margin-bottom: 7px;
+}
+#shopList li{
+  /*line-height: 39px;*/
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  width: 293px;
+  /*padding-left: 10px;*/
+}
+#shopList li .sailTotal{
+  margin-right: 5px;
+  color: #AEADAD;
+  font-size: 14px;
+  float: right;
+}
+#shopList a{
+  font-size: 16px;
+}
+#goods{
+  margin-top: 50px;
+}
+#goodsList1 li p.sailTotal{
+  font-size: 14px;
+  color: #AEADAD;
+  text-align: right;
+  margin-top: 3px;
+}
+#goodsWrap{
+  margin-top: 7px;
+}
+#goodsList1 li{
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+}
+#goodsList1 a{
+  font-size: 16px;
+}

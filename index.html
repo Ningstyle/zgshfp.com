@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>中国社会扶贫网</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/b_index.css">
+<link rel="stylesheet" type="text/css" href="css/lun1.css">
+<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/Scroll.js"></script>
+<script src="js/SaveDatas.js"></script>
+<script src='js/Addr.js'></script>
+<script src="js/locations.js"></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+	<script type="text/javascript"> 
+		var browser=navigator.appName 
+		var b_version=navigator.appVersion 
+		var version=b_version.split(";"); 
+		var trim_Version=version[1].replace(/[ ]/g,""); 
+		if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0") 
+		{ 
+		alert('您当前浏览器版本太低，建议你升级到IE9以上。') 
+		} 
+		else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0") 
+		{ 
+		alert('您当前浏览器版本太低，建议你升级到IE9以上。')
+		} 
+		else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0") 
+		{ 
+			alert('您当前浏览器版本太低，建议你升级到IE9以上。')
+		} 
+		else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0") 
+		{ 
+		alert('建议您升级浏览器。') 
+		} 
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261694780'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261694780%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	<style>
+		.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+			width: 20%;
+			margin-left: 80%;
+			margin-bottom: 20px;
+		}
+		.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+			width: 12px;
+			height: 12px;
+			background: #000;
+
+		}
+		.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active{
+			background: #ccc;
+		}
+	</style>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+  			var hm = document.createElement("script");
+  			hm.src = "https://hm.baidu.com/hm.js?88f0084c90b1d1fe2a4f299fd358b450";
+  			var s = document.getElementsByTagName("script")[0]; 
+  			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+	<!-- 导航部分 -->
+	<div class="HeaderBox">
+		<header id="header" class="header">
+			<a href="javascript:;" class="logo">
+				<img src="images/logo.png" alt="logo" width="100%" height="100%">
+			</a>
+			<div class="Rightbox">
+				<div class="Hellp">
+					<a href="page/help.html" class="HellpA">
+						<span><img src="images/hellp.png" alt="" class="Hel"></span> 帮助中心</a>
+						<div class="Bangzhu">
+							<a href="/user/u002/ssologin.html" target="_back">登录</a>
+								<span class="LineS"></span>
+							<a href="/user/u001/register.html" target="_back">注册</a>
+						</div>
+				</div>
+				<div class="headerNav">
+					<a href="javascript:;" class="Index">首页</a>
+					<span class="LineS"></span>
+					<a href="page/heart1.html" class="">爱心捐助</a>
+					<span class="LineS"></span>
+					<a href="page/fpsc.html" class="">扶贫商城</a>
+					<span class="LineS"></span>
+					<a href="page/zhongchou.html" class="">1017筹</a>
+					<span class="LineS"></span>
+					<a href="page/Exhibition.html" class="">扶贫展示</a>
+					<span class="LineS"></span>
+					<a href="pjhtml/by-index.html" class="">榜样</a>
+					<span class="LineS"></span>
+					<a href="page/aboutm.html" class="">关于我们</a>
+				</div>
+			</div>
+	    </header>
+	</div>
+	<!-- /header -->
+	<!-- banner部分 -->
+    <nav id="Nav" class="Navbox">
+    	<div class="Navda">
+    		<div class="Navda_left">
+    			<span>
+    				<t>扶贫资讯</t>
+    				<a href="page/Exhibition.html">更多></a>
+    			</span>
+    			<a href="page/Exhibition.html"><img src="images/shangxue.png" width="240" height="110"></a>
+    			<ul id="oooo">
+    				
+    			</ul>
+    		</div>
+    		<!-- <div class="Nav_content swiper-container">
+    				<div class="Imgg1 swiper-wrapper">
+	    				<a href="page/heart1.html" style="display: block;" class="swiper-slide">
+	    					<img src="images/b_banner.png" width="580" height="270">
+	    				</a>
+	    				<a href="page/zhongchou.html" class="swiper-slide">
+	    					<img src="images/banner2.png" width="580" height="270">
+	    				</a>
+    				</div>
+    				<div class="swiper-pagination"></div>
+    			
+    		</div> -->
+    		<div class="swiper-container Nav_content">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide">
+		            	<a href="page/heart1.html" style="display: block;" class="swiper-slide">
+	    					<img src="images/b_banner.png" width="580" height="270">
+	    				</a>
+		            </div>
+		            <div class="swiper-slide">
+		            	<a href="page/zhongchou.html" class="swiper-slide">
+	    					<img src="images/banner2.png" width="580" height="270">
+	    				</a>
+		            </div>
+		        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+    </div>
+    		
+    		<div class="Nav_right">
+    			<div class="Nav_rightTop">
+    				<span>
+    					<img src="images/aixin.png" alt="" width="30" height="30">
+    					<a href="">爱心需求</a>
+    					<li style="list-style: none;"><t id="ax"></t>个</li>
+    				</span>
+    				<span>
+    					<img src="images/duijie.png" alt="" width="30" height="30">
+    					<a href="">对接成功</a>
+    					<li style="list-style: none;"><t id="dj"></t>次</li>
+    				</span>
+    				<span>
+    					<img src="images/shankuan.png" alt="" width="30" height="30">
+    					<a href="">爱心善款</a>
+    					<li style="list-style: none;"><t id="mo"></t>元</li>
+    				</span>
+    			</div>
+    			<div class="Nav_rightBottom">
+    				<img src="images/phone.png" alt="" width="74" height="120">
+    				<span>
+    					<p class="pOne">中国社会扶贫网客户端</p>
+    					<p class="pTwo">请下载APP进行发布和捐赠操作</p>
+    					<button id="free">免费下载</button>
+    					<a href="javascript:;" class="HOVER">
+    						扫码
+    						<img src="images/erweimaapp.png" alt="" width="140" height="142" class="OVEROUT">
+    					</a>
+    				</span>
+    			</div>
+    		</div>
+    	</div>
+    </nav>
+    <!-- banner部分结束 -->
+    <!-- content部分 -->
+    <article id="article" class="Content">
+    	<div class="Contentda">
+    		<span>
+    			<img src="images/pingkun.png" alt="" width="240" height="632">
+    		</span>
+    		<div class="Content_center">
+    			<div class="ContentTop">
+    			
+    				<span class="COLOR" style="border-right: 1px solid #eeeeee;">爱心需求</span>
+    				<span style="margin-left: 21px;">爱心捐赠</span>
+
+    				<a href="javascript:;" id="Country" style="font-size: 14px;color: #666;" style="display: block;">[全国]</a>
+    				<div class="quanguo" id="quanguo">
+    					<ul>
+    						<li>
+    							<span>全国</span>
+    							<span>北京市</span>
+    							<span>上海市</span>
+    							<span>天津市</span>
+    							<span>重庆市</span>
+    						</li>
+    						<li>
+    							<span>河北省</span>
+    							<span>山东省</span>
+    							<span>辽宁省</span>
+    							<span>吉林省</span>
+    							<span>黑龙江省</span>
+    						</li>
+    						<li>
+    							<span>甘肃省</span>
+    							<span>青海省</span>
+    							<span>河南省</span>
+    							<span>江苏省</span>
+    							<span>湖北省</span>
+    							<span>湖南省</span>
+    						</li>
+    						<li>
+    							<span>江西省</span>
+    							<span>浙江省</span>
+    							<span>广东省</span>
+    							<span>云南省</span>
+    							<span>福建省</span>
+    							<span>海南省</span>
+    						</li>
+    						<li>
+    							<span>山西省</span>
+    							<span>四川省</span>
+    							<span>贵州省</span>
+    							<span>安徽省</span>
+    						</li>
+    						<li>
+    							<span>广西壮族自治区</span>
+    							<span>新疆维吾尔自治区</span>
+    							<span>西藏自治区</span>
+    						</li>
+    						<li>
+    							<span>宁夏回族自治区</span>
+    							<span>内蒙古自治区</span>
+    						</li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div id="SEX">
+					<div class="xinxi" style="display: block;">
+						
+						
+					</div>
+				<a href="javascript:;" id="MORE1" class="Mored"><span class="b_more">更多内容</span></a>
+				
+				</div>
+    		</div>
+
+
+    		<div class="Content_right">
+    			<span class="spanOne">
+    				<img src="images/jia.png" alt="" width="20" height="20">
+    				爱心需求
+    				<p>贫困用户发布需求</p>
+    			</span>
+    			<span class="spanTwo">
+    				<img src="images/jialv.png" alt="" width="20" height="20">
+    				捐赠闲置
+    				<p>爱心用户捐赠闲置物品</p>
+    			</span>
+    			<div class="divThree">
+    				<span>
+    					<img src="images/hongxin.png" alt="">
+    					爱心动态
+    				</span>
+    				<div class="wanglei">
+    				<div class="ppp">
+    					<ul class="gundong">
+    					<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>吴彬 </t>送给四川省绵阳市北川羌族自治县 <t>唐晨 </t>俩件大衣</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>张浩 </t>送给江西省赣州市全南县 <t>吴民生 </t>一台洗衣机</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>赵子健 </t>送给甘肃省陇南市康县 <t>杨宇林 </t>一台电视机</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>王红月 </t>送给河北承德滦平县 <t>李铁 </t>俩套书籍</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>李春雪 </t>送给四川省绵阳市北川羌族自治县 <t>李建国 </t>俩双鞋</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>郑元琪 </t>河南省洛阳市栾川县 <t>王楠 </t>一张婴儿床</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>李文娟 </t>四川省遂宁市大英县 <t>陈玉杰 </t>一部手机</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>李天龙 </t>四川省绵阳市安州区 <t>张县民 </t>一台电脑</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>朱言 </t>送给河北承德滦平县 <t>张小丹 </t>一个书包</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>杨楠 </t>捐赠甘肃省陇南市成县 <t>孙树材 </t>500元现金</span>
+	    				</li>
+	    				<li style="list-style: none">
+	    					<i></i>
+	    					<span><t>周宇恒 </t>捐赠四川省绵阳市三台县 <t>李刚 </t>1000元现金</span>
+	    				</li>
+    				</ul>
+    				<ul class="zxc"></ul>
+    				</div>
+    				
+    				</div>
+    				
+    			</div>
+
+
+    			<div class="divFour">
+    				<span>
+    					<img src="images/hongxin.png" alt="">
+    					你可能关心的问题
+    				</span>
+    				<li style="list-style: none">
+    					<i></i>
+    					<a href="page/help.html">贫困户如何发布爱心需求？</a>
+    				</li>
+    				<li style="list-style: none">
+    					<i></i>
+    					<a href="page/help.html">爱心人士如何进行帮扶？</a>
+    				</li>
+    				<li style="list-style: none">
+    					<i></i>
+    					<a href="page/help.html">爱心需求都是真实的吗？</a>
+    				</li>
+    			</div>
+    		</div>
+    	</div>
+    </article>
+    <!-- content结束 -->
+    <!-- 众筹开始 -->
+    <div class="zhongchou">
+    	<div class="zc">
+    		<span class="zcOne">
+    			<img src="images/chou.png" alt="" width="240" height="290">
+    		</span>
+    		<div class="zcContent">
+    			<div class="zcContentTop">
+    				<span class="hover">
+    					公益捐助
+    				</span>
+    				<span>
+    					医疗救助
+    				</span>
+    				<span>
+    					教育资助
+    				</span>
+    				<span style="border-right: none">
+    					创业扶助
+    				</span>
+    				<a href="page/zhongchou.html" style="float: right;color: #cd403b;">更多></a>
+    			</div>
+    			<div class="zcContentCenter">
+	    			<div style="display: block;" id="Zhon1">
+	    				
+	    			</div>
+
+	    			<div id="Zhon2">
+	    				
+	    			</div>
+
+	    			<div>
+	    				<img src="images/b_qidai.png" alt="" width="935" height="290">
+	    			</div>
+
+	    			<div>
+	    				<img src="images/b_qiqi.png" alt="" width="935" height="290">
+	    			</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<!-- 众筹结束 -->
+
+<div style="width: 100%;height: 718px;border-bottom:10px solid #e7e7e7;">
+	<div class="Ltop">
+		<div class="Ltopleft">
+			<div class="Ltopleftnav">
+				<span></span>
+				扶贫展示
+			</div>
+			<div class="Ltopcnter">
+				<div class="LtopLeftlist">
+					<ul id="Ul">
+						
+					</ul>
+				</div>
+				<div class="Ltoprightlist">
+					<ul style="display: block;" id="oUUUL">
+						
+					</ul>
+					
+					<div class="LMore">
+						<a href="page/Exhibition.html">更多内容</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+			<div class="Bright">
+				<span class="bangdan" style="height: 57px;padding-top: 30px;width: 320px;">
+					<p>扶贫榜单</p>
+				</span>
+				<div class="qiye" id="Shu">
+					<t>第一书记排行榜</t>
+					<a href="pjhtml/by-index.html">更多 ></a>
+					<span id="TOTAL1">总</span>
+					<span id="YEAR1">年</span>
+					<span class="yanse" id="MONTH1">月</span>
+				</div>
+				<ul class="dianxin" id="dianxin1">
+					
+				</ul>
+
+				<div class="qiye" id="geren">
+					<t>个人排行榜</t>
+					<a href="pjhtml/by-index.html">更多 ></a>
+					<span id="TOTAL">总</span>
+					<span id="YEAR">年</span>
+					<span class="yanse" id="MONTH">月</span>
+				</div>
+				<ul class="dianxin" id="dianxin">
+					 
+				</ul>
+			</div>
+		</div>
+</div>
+<!-- 榜单开始 -->
+<div class="bd">
+	<div class="bdCon">
+		<div class="bdConOne">
+			<img src="images/chide.png">
+		</div>
+		<div class="bdConTwo">
+			<span class="bangdan">
+				<p>电商平台榜单</p>
+			</span>
+			<div class="jd">
+				<div class="shanggun" style="height: auto;">
+				<div class="qwe">
+					<span class="JD">
+						<img src="images/js.png" alt="" width="130" height="90">
+						<t>京东</t>
+						<p>销售额：<span id="jd_span" style="color: #ce413a;"></span>元</p>
+					</span>
+					<span class="JD">
+						<img src="images/lecuntao.png" alt="" width="130" height="90">
+						<t>乐村淘</t>
+						<p>销售额：<span id="lct_span" style="color: #ce413a;"></span>元</p>
+					</span>
+					<span class="JD">
+						<img src="images/供销e家.png" alt="" width="130" height="90">
+						<t>供销e家</t>
+						<p>销售额：<span id="gxej_span" style="color: #ce413a;"></span>元</p>
+					</span>
+					<span class="JD">
+						<img src="images/deyuan.png" alt="" width="130" height="90">
+						<t>德源善购</t>
+						<p>销售额：<span id="dysg_span" style="color: #ce413a;"></span>元</p>
+					</span>
+					<span class="JD">
+						<img src="images/苏宁易购.png" alt="" width="130" height="90">
+						<t>苏宁易购</t>
+						<p>销售额：<span id="snyg_span" style="color: #ce413a;"></span>元</p>
+					</span>
+				</div>
+				<div class="asd"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="bdConThree">
+			<span class="bangdan">
+				<p>店铺榜单</p>
+			</span>
+			<ul id="Dianpu">
+				
+			</ul>
+		</div>
+		<div class="bdConFour">
+			<span class="bangdan" style="width: 330px;">
+				<p>商品榜单</p>
+			</span>
+			<ul id="Sp">
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="ma">
+	<div class="MA">
+		<img src="images/yangguang.png" alt="" class="yangguang">
+		<img src="images/erweima.png" alt="" class="erweima">
+		<div class="xiazai">
+			<a href="http://www.zgshfp.com.cn/PovertyRelief/HelpLove.apk"><img src="images/anzhuo.png" alt="" class="anzhuo"></a>
+			<img src="images/ios.png" alt="" class="ios">
+		</div>
+		
+	</div>
+</div>
+
+ <div class="footer">
+    	<footer class="footerBox">
+    		<p class="LFriend">
+    			<a href="http://www.cpad.gov.cn/" target="_Blank">国务院扶贫办</a>
+    			<span>|</span>
+    			<a href="http://www.xinhuanet.com/" target="_Blank">新华网</a>
+    			<span>|</span>
+    			<a href="http://www.people.com.cn/" target="_Blank">人民网</a>
+    			<span>|</span>
+    			<a href="http://www.zgfpkf.org.cn/" target="_Blank">中国扶贫开发协会</a>
+    			<span>|</span>
+    			<a href="http://www.gov.cn/" target="_Blank">中国政府网</a>
+    			<span>|</span>
+    			<a href="http://www.radio.cn/" target="_Blank">中国广播网</a>
+    			<span>|</span>
+    			<a href="http://api123.farmer.com.cn/" target="_Blank">中国农业新闻网</a>
+    			<span>|</span>
+    			<a href="http://www.china.com.cn/" target="_Blank">中国网</a>
+    			<span>|</span>
+    			<a href="http://www.gmw.cn/" target="_Blank">光明网</a>
+    			<span>|</span>
+    			<a href="http://www.cri.cn/" target="_Blank">国际在线</a>
+    		</p>
+    		<p class="Lzhidao">
+    			指导单位：国务院扶贫办社会扶贫司、国务院扶贫办信息中心
+    		</p>
+    		<p>京ICP备16040855号-1　<span>北京帮一把网络科技有限公司 </span><span>|</span><span> 版权所有</span></p>
+    	</footer>
+    <span class="screenTop" id="rTop">
+    	<a href="javascript:;" onclick="toTop()"></a>
+    </span>
+    <div class="tanchu">
+		<div class="motai">
+			<span class="xiazai">
+				<p>下载中国社会扶贫网客户端，继续操作</p>
+			</span>
+			<a href="javascript:;" id="del"></a>
+			<div class="ioss">
+				<p>扫描二维码下载</p>
+				<img src="images/bu.png" alt="">
+			</div>
+			<div class="anzhuos">
+				<p>官方渠道下载</p>
+				<a href="http://www.zgshfp.com.cn/PovertyRelief/HelpLove.apk" target="_Blank"><img src="images/anzhuo.png" alt=""></a>
+				<a href="javascript:return false;"><img src="images/ios.png" alt=""></a>
+			</div>
+	</div>
+    </div>
+    <div class="pic-pos">
+			<span class="sign-left"></span>
+			<div class="pos-div">
+			<div id="pos-img">
+				<!-- <div class="pos-1 ">
+					<img src="images/wangchuncai1.png" class="img1">
+				</div>
+				<div class="pos-2 ">
+					<img src="images/wangchuncai2.png" class="img2">
+				</div>
+				<div class="pos-3 ">
+					<img src="images/b_qidai.png" class="img3">
+				</div> -->
+				</div>
+			</div>
+			<span class="sign-right"></span>
+			<span class="close"></span>
+			<!-- <div class="bg-pos"></div> -->
+		</div>
+
+</body>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: false,
+        loop: true,
+        autoplay: 2500,
+        speed:800,
+    });      	
+		
+
+
+		//图片轮播图逻辑
+		
+
+		function Move(W,H,num,obj,index){
+			this.back=$('.bg-pos')
+			this.father = $('.pic-pos');
+			this.left = $('.sign-left');
+			this.right = $('.sign-right');
+			this.pic = $('#pos-img');
+			this.out = $('.pos-div');
+			this.con1=$('.pos-1');
+			this.close = $('.close');
+			this.onoff = true;
+			this.index = index;
+			this.count = index;
+			this.num = num
+			this.obj =obj;
+			this.leftQ=0;
+			this.W=W;
+			this.H=H;
+			this.onoff=true;
+			this.window = $(window).width()
+			this.init();
+		}
+
+		Move.prototype = {
+			constructor:Move,
+			init(){
+				var _this = this;
+				_this.out.css({
+					left:($(window).width()-_this.W)/2,
+					top:($(window).height()-_this.W)/2,
+				});
+				console.log(_this.count)
+				$('#pos-img').html('')
+				$('#pos-img').width(_this.W*_this.obj.length).height(_this.H)
+				_this.divCount(_this.obj.length,_this.index)
+				_this.close.on('click',_this.closed.bind(_this));
+				_this.left.on('click',_this.leftMove.bind(_this));
+				_this.right.on('click',_this.rightMove.bind(_this));
+			},
+			divCount(num,index){
+				var _this = this;
+				// _this.count = 0;
+					var t='';
+				for(var t=0;t<_this.obj.length;t++){
+					// console.log(_this.obj[t])
+					$('#pos-img').append($('<div></div>',{
+						html:'<img src="'+_this.obj[t]+'">',
+						style:'width:'+_this.W+'px;float:left;overflow:hidden;height：'+_this.H+'px'
+					}))
+				} 	
+				$('#pos-img img').width(_this.W).height(_this.H)
+				$('#pos-img ').css({
+					left:-_this.index*_this.W+'px'
+				})
+				$('#pos-img img').eq(_this.index).attr('data-id',_this.index);
+
+			},
+			resetInfo(ele,num){//比较图片的宽高，高了重置为460 宽度超了限制为500
+				var _this = this;
+				if(ele.width()>ele.height()){
+					if(ele.width()>_this.W){
+						var t=ele.width()/_this.W;
+						ele.width(_this.W)
+						var m=ele.height();
+						$(ele).height(m/t);
+						_this.resetPos(ele,num);
+						return;
+					}
+				}else if(ele.width()<ele.height()) {
+					if(ele.height()>_this.H){
+						var t=ele.height()/_this.H;
+						ele.width(_this.H)
+						var m=ele.width();
+						$(ele).width(m/t);
+						_this.resetPos(ele,num);
+						return;
+					}
+				}
+			},
+			resetPos(ele,num){
+				var _this = this;
+				ele.css({
+					top:(_this.H-ele.height())/2+'px',
+					left:(_this.W-ele.width())/2+'px'
+				})
+			},
+			leftMove(){//左边按钮
+				var _this =this;
+				if($('#pos-img').is(':animated')) return;
+				_this.leftQ=$('#pos-img').css('left').split('px').join('');
+				if(_this.leftQ==0)return
+				var t=Math.abs(_this.leftQ/500);
+				$('#pos-img').stop().animate({
+					left:-_this.W*(t-1)+'px',
+				},600,function(){
+					_this.onoff = true
+				})
+			},
+			rightMove(){//右边按钮
+				
+				var _this =this;
+				if($('#pos-img').is(':animated')) return;
+				_this.leftQ=$('#pos-img').css('left').split('px').join('');
+				if(Math.abs(_this.leftQ)==$('#pos-img').width()-500)return _this.onoff =false;
+				var t=Math.abs(_this.leftQ/500);
+				if(_this.onoff){
+				$('#pos-img').stop().animate({
+					left:-_this.W*(t+1)+'px',
+				},600,function(){
+				})
+			}
+			},
+			closed(e){//关闭弹框
+				// console.log( e.target)_this.count = 0;
+				var _this = this;
+				_this.count = 0;
+				_this.father.hide();
+				_this.pic.css('left','0')
+			}
+		}
+		$('body').delegate('.Se','click',function(event){
+    			var hel = -1;
+    			if(event.target.nodeName == 'IMG'){
+    				var imgs=$(event.target).parent().find('img')
+    				var srcs = [];
+    				for(var i=0;i<imgs.length;i++){
+    					srcs.push(imgs[i].currentSrc)
+    				}
+    				 hel=$(this).index()
+    				new Move(500,460,srcs.length,srcs,hel)
+    			}
+    			$('.pic-pos').css('display','block')
+    			console.log($('.pic-pos'))
+								
+			})
+		
+
+
+		var arr1 = ["http://res.zgshfp.org.cn/upload/djpt/image/bbs1627468199.jpg",'http://res.zgshfp.org.cn/upload/djpt/image/bbs1627491384.jpg','http://res.zgshfp.org.cn/upload/djpt/image/bbs1627537435.jpg']
+		$('.yueqi').eq(0).on('click',function(e){
+			// for(var t =0;t<$('.yueqi img').find('img').length;t++){
+			// 	$('#pos-img img').eq(0).attr('src',arr1[0])
+			// 	$('#pos-img img').eq(1).attr('src',arr1[1])
+			// 	$('#pos-img img').eq(2).attr('src',arr1[2])
+			// }
+			// var ind = $(this).index($('.yueqi').eq(0).find('img'))
+			if(e.target.nodeName === 'IMG'){
+				var imgs=$('.yueqi ').eq(0).find('img')
+				var ind = $(e.target).index()
+			
+				new Move(500,460,arr1.length,arr1,ind)
+			$('.pic-pos').show()}
+		})
+
+	
+		var arr = ["http://res.zgshfp.org.cn/upload/djpt/image/bbs1453644357.jpg",'http://res.zgshfp.org.cn/upload/djpt/image/bbs1453660920.jpg']
+		$('.yueqi').eq(1).on('click',function(e){
+			if(e.target.nodeName === 'IMG'){
+				var imgs=$('.yueqi ').eq(1).find('img')
+				var ind = $(e.target).index()
+				console.log(ind)
+				new Move(500,460,arr.length,arr,ind)
+			$('.pic-pos').show()}
+		})
+
+
+
+		var arr2 = ["http://res.zgshfp.org.cn/upload/djpt/image/bbs1075177572.jpg",'http://res.zgshfp.org.cn/upload/djpt/image/bbs1075183374.jpg','http://res.zgshfp.org.cn/upload/djpt/image/bbs1075189608.jpg']
+		$('.yueqi').eq(2).on('click',function(e){
+			if(e.target.nodeName === 'IMG'){
+				var imgs=$('.yueqi ').eq(2).find('img')
+				var ind = $(e.target).index()
+				console.log(ind)
+				new Move(500,460,arr2.length,arr2,ind)
+			$('.pic-pos').show()}
+		})
+
+
+		var arr3 = ["http://res.zgshfp.org.cn/upload/djpt/image/bbs1075597543.jpg",'http://res.zgshfp.org.cn/upload/djpt/image/bbs1075605568.jpg','http://res.zgshfp.org.cn/upload/djpt/image/bbs1075610075.jpg']
+		$('.yueqi').eq(3).on('click',function(e){
+			if(e.target.nodeName === 'IMG'){
+				var imgs=$('.yueqi ').eq(3).find('img')
+				var ind = $(e.target).index()
+				console.log(ind)
+				new Move(500,460,arr3.length,arr3,ind)
+			$('.pic-pos').show()}
+		})
+		
+
+
+		 </script>
+</script>
+</html>

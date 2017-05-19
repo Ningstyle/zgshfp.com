@@ -1,0 +1,75 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#main {
+  width: 1200px;
+  margin: 183px auto;
+}
+#main #left {
+  width: 240px;
+  float: left;
+}
+#main #left a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 100px 13px 12px;
+  border-bottom: 1px solid #EEEEEE;
+  position: relative;
+  background: url("../images/jt.png") no-repeat center right;
+}
+#main #left a.div2 {
+  background: url("../images/hjt.png") no-repeat center right;
+}
+#main #right #right1 {
+  width: 820px;
+  float: left;
+  margin: 0 0 12px 140px;
+}
+#main #right #right1 h3 {
+  font-size: 18px;
+  padding-top: 12px;
+}
+#main #right #right1 .p1 {
+  border-top: 1px solid #EEEEEE;
+  padding-top: 26px;
+}
+#main #right #right1 p {
+  margin-top: 12px;
+  line-height: 2;
+  text-indent: 2em;
+  font-size: 14px;
+}
+#main #right #right2 {
+  width: 655px;
+  float: left;
+  margin: 0 0 12px 140px;
+}
+#main #right #right2 h3 {
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid #EEEEEE;
+  padding: 12px 0;
+  margin-bottom: 5px;
+}
+#main #right #right2 div {
+  float: left;
+}
+#main #right #right2 div p {
+  font-size: 16px;
+  margin: 22px 0 6px;
+}
+#main #right #right2 img {
+  float: right;
+  margin-top: 28px;
+}
+.help {
+  color: red;
+}
+.hide {
+  display: none;
+}

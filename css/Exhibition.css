@@ -1,0 +1,659 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-01 13:36:02
+ * @version $Id$
+ */
+
+ .Bigbox{
+ 	width: 100%;
+ 	height: 100%;
+ 	-overflow: hidden;
+ }
+
+  /*header*/
+ .HeaderBox{
+	width: 100%;
+	height: 100px;
+	box-shadow: 0px 8px 10px #f3f3f3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #fff;
+}
+.header{
+	width: 1200px;
+	height: 100px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display:table-cell
+}
+.logo{
+	width: 240px;
+	height: 46px;
+	float: left;
+	margin-top: 35px;
+}
+.Rightbox{
+	width: 600px;
+	height: 100px;
+	float: right;
+}
+.Hellp{
+	width: 192px;
+	height: 28px;
+	margin-top: 22px;
+	float: right;
+	font-size: 15px;
+}
+.Hellp a{
+	line-height:28px;
+	padding: 0 7px;
+	color: #ce4239;
+	float: left;
+}
+.Hellp span.LineS{
+	width: 2px;
+	height: 14px;
+	background: #ce4239;
+	float: left;
+	margin-top: 7px;
+}
+.Hellp a.HellpA{
+	color: #ababab;
+	margin-right: 4px;
+}
+.Hellp a.HellpA:hover{
+	color: #888;
+}
+.Hel{
+	width:16px; 
+	height: 16px;
+}
+.headerNav{
+	clear: both;
+	width: 560px;
+	height: 50px;
+	color: #636363;
+	font-size: 15px;
+	float: right;
+}
+.headerNav a{
+	line-height: 50px;
+	padding: 0 15px;
+	float: left;
+}
+.headerNav a:last-child{
+	padding: 0 0 0 15px;
+}
+.headerNav span{
+	width: 1px;
+	height: 14px;
+	background: #d5d5d5;
+	float: left;
+	margin-top: 19px;
+}
+.headerNav a:after{
+	content: '';
+	width: 22px;
+	height: 4px;
+	background: #cd403b;
+	position: absolute;
+	top: 46px;
+	left: 50%;
+	margin-left: -11px;
+	display: none;
+}
+.headerNav a.lExh{
+	position: relative;
+	color: #cd403b;
+}
+.headerNav a.lExh:after{
+	content: '';
+	width: 22px;
+	height: 4px;
+	background: #cd403b;
+	position: absolute;
+	top: 46px;
+	left: 50%;
+	margin-left: -11px;
+	display: block;
+}
+ /*header end*/
+
+  /*center*/
+  .Lcenter{
+  	width: 100%;
+  	height: 395px;
+  	margin: auto;
+  	margin-top: 108px;
+  	
+  }
+  .LSearch{
+  	width: 1200px;
+  	height: 395px;
+  	margin: auto;
+  }
+  .Bigtop{
+  	width:100%;
+  	height:auto;
+  	/*overflow: hidden;*/
+  	border-top: 10px solid #e8e8e8;
+  }
+  .Lgps{
+  	width: 100%;
+  	height: 85px;
+  }
+  .Lgs{
+  	height: 85px;
+  	line-height: 85px;
+  	color: #666;
+  	font-size: 15px;
+  	float: left;
+  	-font-weight: bold
+  }
+
+  .Lgs a.Lact{
+  	position: relative;
+  }
+  .LFoter{
+  	width: 362px;
+  	height: 240px;
+  	background: url(../images/Lhidden.png);
+  	position: absolute;
+  	top: 31px;
+  	left: 24px;
+	display: none;
+	z-index: 999;
+  }
+  .LFoter ul{
+  	width: 100%;
+  	height: auto;
+  	margin-top: 5px;
+  	padding: 25px;
+  	box-sizing: border-box
+  }
+  .LFoter ul li{
+  	width: 100%;
+	height: 27px;
+	border-bottom: 1px solid #eee;
+  	line-height: 35px;
+  	overflow: hidden
+
+  }
+  .LFoter ul li span{
+  	width: 51px;
+  	color: #666;
+  	font-size: 12px;
+  	float: left;
+  }
+  .LFoter li span:hover{
+  	color: #cb4240;
+  }
+  .LFoter li span.Lzq{
+  	width: auto;
+  	margin-right: 20px;
+  }
+  .LFoter ul li span.active{
+  	color: #cb4240;
+  }
+  .LnImg1{
+	margin-left: 5px;
+  }
+  .Lsear{
+  	width: 900px;
+  	float: left;
+  	margin-left: 28px;
+  }
+  .D1{
+  	width: 488px;
+  	height: 35px;
+  	border: 1px solid #cccccc;
+  	border-radius: 5px;
+  	margin-top: 24px;
+  	padding: 1px ;
+  	position: relative;
+  }
+  .D1 span{
+  	width:100%;
+  	height:35px;
+  	line-height:35px;
+  	padding-left:10px;
+  	color:#666;
+  	font-size:14px;
+  	box-sizing: border-box;
+  	display:none;
+  }
+  .History{
+    width: 490px;
+    max-height: 180px;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    top: 36px;
+    left: -1px;
+    margin: 0;
+    z-index: 999;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    display: none;
+  }
+  .History li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #656565;
+    padding: 0 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .History li:hover{
+    background: #eee;
+  }
+  .Apul p{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    text-align: center;
+    display: none;
+  }
+  .Lsear div input{
+  	width: 96%;
+  	height: 93%;
+  	margin: 0;
+  	border: none;
+  	outline: none;
+  	padding-left: 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  .Lsear div a.LnSear{
+  	width: 23px;
+  	height: 23px;
+  	position: absolute;
+  	right: 13px;
+  	top: 7px;
+  }
+  .LImgText{
+  	width: 1200px;
+  	height: 310px;
+  	position: relative;
+  }
+  .Limg{
+  	width: 608px;
+  	height: 310px;
+  	float: left;
+  }
+  .LText{
+  	width: 235px;
+  	height: 310px;
+  	float: left;
+  	padding: 0 22px;
+  	color: #333333;
+  }
+  .LText h2{
+  	font-size: 17px;
+  	font-weight: bold;
+  }
+  .LText p{
+  	line-height: 20px;
+  	font-size: 13px;
+  	margin-top: 20px;
+  }
+   .LText p a{
+   	color: #cd403b;
+    float: right;
+   }
+  .LList{
+  	width: 305px;
+  	height: 310px;
+  	float: left;
+  }
+  .Limg{
+  	width:608px ;
+  	height: 310px;
+    float: left;
+  }
+  .Ltab1{
+  	width: 887px;
+  	height: 310px;
+  	opacity: 1;
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+    display: none;
+    }
+    .Ltab1:first-child{
+      display: block;
+    }
+  .LBigbox{
+  	float: left;
+  	width: 887px;
+  	height: 310px;
+  	overflow: hidden;
+  	position: relative;
+  }
+  .
+  .Banner_nav{
+  	width: 100%;
+  	height: 15px;
+  	position: absolute;
+  	left: 0;
+  	bottom: 20px;
+  }
+  .lBnav{
+  	width: 15%;
+  	height: 15px;
+  	position: absolute;
+  	right: 43%;
+  	bottom: 20px;
+  }
+  .lBnav span{
+  	width: 12px;
+  	height: 12px;
+  	border-radius: 10px;
+  	float: left;
+  	background: #fff;
+  	margin-left:8px;
+  	cursor: pointer;
+  	text-align: center;
+  }
+  .lBnav span.active{
+	background: #d63234;
+  }
+  .listnav{
+  	width: 305px;
+  	height: 37px;
+  	line-height: 20px;
+  	border-bottom: 1px solid #ccc;
+  	font-size: 16px;
+  }
+  .listnav span{
+  	width: 4px;
+  	height: 20px;
+  	float: left;
+  	margin-right: 7px;
+  	margin-top: 1px;
+  	background:#cd403b ;
+  }
+  .ListNs{
+  	width: 304px;
+  	height: 246px;
+  	position: relative;
+  	top: 24px;
+  }
+  .Lfptop{
+  	width: 304px;
+  	height: 246px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  }
+  .Lfptop li{
+  	width: 100%;
+  	height: 45px;
+  	margin-top: 8px;
+  }
+  .Lfptop li:last-child{
+  	margin: 0;
+  }
+  .Lfptop li a{
+  	width: 150px;
+  	height: 45px;
+  	float: left;
+  }
+  .Ltop{
+  	width: 1200px;
+  	height: auto;
+  	overflow: hidden;
+  	margin: auto;
+  	margin-bottom: 80px;
+  }
+  .Ltopleft{
+  	width: 867px;
+  	height: auto;
+  	float: left;
+  	overflow: hidden
+  }
+  .Ltopright{
+  	width: 308px;
+  	height: auto;
+  	float: right;
+  	overflow: hidden
+  }
+  .Ltopleftnav{
+	width: 867px;
+	height: 56px;
+	border-bottom: 1px solid #ccc;
+	font-size: 17px;
+	line-height: 70px;
+  }
+  .Ltopleftnav span{
+  	width: 4px;
+  	height: 20px;
+  	background: #cd403b;
+  	float: left;
+  	margin: 27px 6px 0 0;
+
+  }
+  .Ltoprightnav{
+	width: 308px;
+	height: 56px;
+	border-bottom: 1px solid #ccc;
+	font-size: 17px;
+	line-height: 70px;
+  }
+  .Ltoprightnav span{
+  	width: 4px;
+  	height: 20px;
+  	background: #cd403b;
+  	float: left;
+  	margin: 27px 6px 0 0;
+
+  }
+  .Ltopcnter{
+  	width: 867px;
+  	height: auto;
+  }
+  .LtopLeftlist{
+  	width: 240px;
+  	height:auto ;
+  	float: left;
+  }
+  .LtopLeftlist ul li{
+  	width: 200px;
+  	height: 42px;
+  	border-bottom: 1px solid #ccc;
+  	padding-left: 11px;
+  	line-height: 42px;
+  	color: #666;
+  	font-size: 16px;
+  	position: relative;
+  }
+  .LtopLeftlist ul li:after{
+  	content: '';
+	width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 10px solid #666666;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .LtopLeftlist ul li.active{
+  	color: #cd403b;
+  }
+  .LtopLeftlist ul li.active:after{
+  	content: '';
+	width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 10px solid #cd403b;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .Ltoprightlist{
+	width: 600px;
+	height: auto;
+	float: right;
+  }
+  .Ltoprightlist ul li{
+  	width: 600px;
+  	height: 120px;
+  	border-bottom: 1px dotted #ccc;
+  }
+  .Ltoprightlist ul li div{
+  	width: 600px;
+  	height: 90px;
+  	margin-top: 20px;
+    display: flex;
+  }
+  .Ltoprightlist ul li div sup{
+    flex: 2;
+    text-align: right;
+    height: 90px;
+    padding-top: 6px;
+  }
+  .Ltoprightlist ul li div p{
+  	height: 90px;
+    flex: 4;
+  }
+  .Ltoprightlist ul li div p.Flexp{
+    height: 90px;
+    flex: 1;
+  }
+  .Ltoprightlist ul li div p span{
+  	width: 100%;
+  	display: block;
+  	line-height: 20px;
+  	font-size: 15px;
+  }
+  .Ltoprightlist ul li div p span.Ltext2{
+    font-size: 13px;
+    color: #919090;
+    line-height: 30px;
+  }
+  .Ltoprightlist ul li div p span img{
+  	float: left;
+  	margin-right: 5px;
+  	margin-top: 8px;
+  }
+  .Ltext1{
+  	font-size:16px;
+  	color: #333;
+  }
+  .LiL{
+  	float: left;
+  	line-height: 30px;
+    font-size: 13px;
+    color: #9f9f9f;
+  }
+  .LiR{
+  	float: right;
+  	line-height: 30px;
+    font-size: 13px;
+    color: #9f9f9f;
+  }
+  .LMore{
+  	width: 600px;
+  	height: 30px;
+  	line-height: 30px;
+  	text-align: center;
+  	border-bottom: 1px dotted #ccc;
+    cursor: pointer
+  }
+  .LMore a{
+	font-size: 14px;
+  	color: #cd403b;
+  }
+    .Ljulist1{
+    width: 308px;
+    height: auto;
+    overflow: hidden
+  }
+  .Ljulist1 li{
+    width: 308px;
+    height: 120px;
+    border-bottom: 1px dotted #ccc;
+    margin-top: 20px;
+  }
+  .Ljulist{
+  	width: 308px;
+  	height: auto;
+  	overflow: hidden
+  }
+  .Ljulist li{
+  	width: 308px;
+  	height: 120px;
+  	border-bottom: 1px dotted #ccc;
+    margin-top: 20px;
+  }
+  .Ljulistimg{
+  	width: 100%;
+  	margin-top: 15px;
+  }
+  .LjulistLe{
+  	width: 142px;
+  	height: 94px;
+  	float: left;
+    overflow: hidden
+  }
+  .LjulistRi{
+  	width: 156px;
+  	height: 94px;
+  	float: right;
+  	line-height: 24px;
+  	font-size: 15px;
+  	color: #666;
+  }
+  .LjulistRi span{
+	width: 8px;
+	height: 8px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 8px;
+	background: #cd403b;
+  }
+  .LNmore{
+  	width: 25%;
+  	height: 30px;
+  	float: right;
+  	line-height: 30px;
+  	font-size: 14px;
+  	color: #cd403b;
+  }
+ /*center end*/
+
+  /*footer*/
+.footer{
+	width: 100%;
+	height: 150px;
+	display: block;
+	border-top: 10px solid #e7e7e7;
+}
+.footerBox{
+	width:800px;
+	height: 150px;
+	margin: auto;
+	margin-top: 20px;
+}
+.footerBox p{
+	text-align: center;
+	line-height: 35px;
+	color: #919090;
+}
+.footerBox p a{
+	color: #919090;
+}
+.footerBox p.LFriend{
+	color: #919090;
+}
+  /*footer end*/

@@ -1,0 +1,72 @@
+<div class="container fn-clear">
+    <!--排行榜-->
+    <div class="rank-box">
+        <!--排行榜--头部-->
+        <div class="rank-head">
+            <h3>
+                个人排行榜
+                <span class="more">更多&gt;</span>
+            </h3>
+            <div class="tab-warp">
+                <a  class="active">月</a>
+                <a >年</a>
+                <a >总</a>
+            </div>
+        </div>
+        <!--排行榜--列表-->
+        <ul class="person"></ul>
+        <ul class="person" style="display:none"></ul>
+        <ul class="person" style="display:none"></ul>
+    </div>
+
+    <!--排行榜-->
+    <div class="rank-box">
+        <!--排行榜--头部-->
+        <div class="rank-head">
+            <h3>
+                第一书记排行榜
+                <span class="more">更多&gt;</span>
+            </h3>
+            <div class="tab-warp">
+                <a class="active">月</a>
+                <a >年</a>
+                <a >总</a>
+            </div>
+        </div>
+        <!--排行榜--列表-->
+        <ul class="person"></ul>
+        <ul class="person" style="display:none"></ul>
+        <ul class="person" style="display:none"></ul>
+    </div>
+</div>
+<script type="text/javascript">
+    
+    //个人排行榜数据请求
+    $('ul.person').each(function(i){
+        getPersonRankInfo(i);
+    });
+
+    //排行榜右侧年月菜单点击切换
+    $('.tab-warp').each(function(){
+        $(this).find('a').each(function(index){
+            $(this).click(function(){
+                $(this).addClass('active').siblings('a').removeClass('active');
+                $(this).parents('.rank-box').find('ul :eq('+index+')').fadeIn(500).siblings('ul').hide();
+            });
+        });
+    })
+
+    $('.rank-head h3 .more').each(function(i){
+        $(this).click(function(){
+            $('.by-left li').removeClass('active');
+            if(i=='0'){
+                $('.by-left [type="gr"]').parent().addClass('active');
+                $('.by-right').load('person-tab.html');
+            }else{
+                $('.by-left [type="sj"]').parent().addClass('active');
+                $('.by-right').load('person-tab.html');
+            }
+        });
+    });
+  
+</script>

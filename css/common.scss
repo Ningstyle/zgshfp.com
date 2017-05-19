@@ -1,0 +1,17 @@
+.clearfix{
+	content:'';
+	display:block;
+	clear:both;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+ul,body,h2,p,h1,h3,h4,ol,{
+	margin:0;
+	padding:0;
+}
+ul{list-style:none}
+a {text-decoration:none;}

@@ -1,0 +1,220 @@
+<!--导航-->
+<div class="gd-container">
+    <h3 class="gd-title"><span></span><small class="small-title"></small></h3>
+    <div class="tool-box">
+        <div class="rank-tab-box">
+            <a small="当月" type="month" class="active" >月榜</a>
+            <em>|</em>
+            <a small="当年" type="year">年榜</a>
+            <em>|</em>
+            <a small="累计" type="all">总榜</a>
+        </div>
+        <!--
+        <div class="btn-box">
+            <div class="type-list">
+                <a class="active">全部分类</a>
+                <em>|</em>
+                <a>医疗救助</a>
+                <em>|</em>
+                <a>教育资助</a>
+                <em>|</em>
+                <a>危房改造</a>
+            </div>
+        </div>
+        -->
+    </div>
+    <table class="tab-list tab-1">
+        <thead>
+            <tr>
+                <th class="w-50">序号</th>
+                <th>用户</th>
+                <th>月度积分</th>
+                <th>年度积分</th>
+                <th>累计积分</th>
+                <th class="w-100">详情</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <table class="tab-list tab-2">
+        <thead>
+            <tr>
+                <th class="w-50">序号</th>
+                <th>用户</th>
+                <th>年度积分</th>
+                <th>累计积分</th>
+                <th class="w-100">详情</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <table class="tab-list tab-3">
+        <thead>
+            <tr>
+                <th class="w-50">序号</th>
+                <th>用户</th>
+                <th>累计积分</th>
+                <th class="w-100">详情</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="page-box">
+        <span>
+        	<button>首页</button>
+        	<button>上一页</button>
+            <button>0/0</button>
+        	<button>下一页</button>
+        	<button>末页</button>
+        </span>
+    </div>
+    <input type="hidden" class="pageSize" value="10">
+    <input type="hidden" class="pageIndex" value="0">
+    <input type="hidden" class="pageCount" value="0">
+</div>
+</div>
+<script type="text/javascript">
+    $('.rank-tab-box a').click(function(){
+        $(this).addClass('active').siblings('a').removeClass('active');
+
+        //标题和副标题信息输入
+        var leftLi = $('.by-left li.active span');
+        $('.by-right .gd-title span').text(leftLi.text());
+        $('.by-right .gd-title small').text($(this).attr('small')+leftLi.attr('small'));
+        $('.pageIndex').val(0);  
+        getTabListInfo();
+    });
+
+    $(function(){
+        $('.rank-tab-box a:eq(0)').trigger('click');
+    })
+
+    //分页按钮事件
+    //首页
+    $('.page-box button:eq(0)').click(function(){
+        $('.pageIndex').val(0);
+        getTabListInfo();
+    });
+    //末页
+    $('.page-box button:eq(4)').click(function(){
+        $('.pageIndex').val($('.pageCount').val());
+        getTabListInfo();
+    });
+    //上一页
+    $('.page-box button:eq(1)').click(function(){
+        var pageIndex = $('.pageIndex').val();
+        if(pageIndex >=1){
+            pageIndex = Number(pageIndex) -1;
+        }else{
+            pageIndex = 0;
+        }
+        $('.pageIndex').val(pageIndex);  
+        getTabListInfo();
+    });
+    //下一页
+    $('.page-box button:eq(3)').click(function(){
+        var pageIndex = $('.pageIndex').val();
+        var pageCount = $('.pageCount').val();
+        if(pageIndex <= (Number(pageCount)-1)){
+            pageIndex = Number(pageIndex) + 1;
+        }else{
+            pageIndex = pageCount;
+        }
+        $('.pageIndex').val(pageIndex);  
+        getTabListInfo();
+    });
+
+    function getTabListInfo(){
+        var liType = $('.by-left li.active span').attr('type');
+        var aType = $('.rank-tab-box a.active').attr('type');
+
+        if(aType=='month'){
+            $('.tab-1').show();
+            $('.tab-2').hide();
+            $('.tab-3').hide();
+        }else if(aType=='year'){
+            $('.tab-1').hide();
+            $('.tab-2').show();
+            $('.tab-3').hide();
+        }else if(aType=='all'){
+            $('.tab-1').hide();
+            $('.tab-2').hide();
+            $('.tab-3').show();
+        }
+
+        //判断是进入个人排行榜还是进入第一书记排行榜
+        if(liType=="gr"){
+            if(aType=='month'){
+                asyncTabListInfo(0, '.tab-1');
+            }else if(aType=='year'){
+                asyncTabListInfo(1, '.tab-2');
+            }else if(aType=='all'){
+                asyncTabListInfo(2, '.tab-3');
+            }
+
+        }else if(liType=="sj"){
+            if(aType=='month'){
+                asyncTabListInfo(3, '.tab-1');
+            }else if(aType=='year'){
+                asyncTabListInfo(4, '.tab-2');
+            }else if(aType=='all'){
+                asyncTabListInfo(5, '.tab-3');
+            }
+        }
+    }
+
+    function asyncTabListInfo(t, selector){
+        var pageSize = $('.pageSize').val();
+        var pageIndex = $('.pageIndex').val();
+        if(t=='0'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getXQ?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }else if(t=='1'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getUserN?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }else if(t=='2'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getUserN?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }else if(t=='3'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getDYSJXQ?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }else if(t=='4'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getDysjY?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }else if(t=='5'){
+            url = comUrl+'/shfp/ajaxpagequery/revision/pjpt/getDysjN?pageSize='+pageSize+'&pageIndex='+pageIndex;
+        }
+
+        $.ajax({
+            type:'get',
+            url:url,
+            async:true,
+            dataType:'jsonp',
+            jsonp:'callback',
+            success:function(data){
+                if(data && data.statusCode=='200'){
+                    var info = data.result.pageresult;
+                    buildTableListHtml(info.data, selector)
+
+                    $('.pageSize').val(info.pageSize);
+                    $('.pageIndex').val(info.pageIndex);
+                    $('.pageCount').val(info.pageCount-1);
+                    $('.page-box button:eq(2)').text(info.pageIndex+1+' / '+(info.pageCount));
+                }
+            }
+        })
+    }
+
+    function buildTableListHtml(info, selector){
+        var html = '';
+        for(var i=0,len=info.length;i<len;i++){
+            if(selector=='.tab-1'){
+                html += '<tr><td>'+info[i].rownum+'</td><td>'+info[i].uus035+'</td><td>'+info[i].afa007+'</td><td>'+info[i].afa007nd+'</td><td>'+info[i].afa007nd+'</td><td><a url="no-info.html">帮扶详情</a></td><tr>';
+            }else if(selector=='.tab-2'){
+                html += '<tr><td>'+info[i].rownum+'</td><td>'+info[i].uus035+'</td><td>'+info[i].afa007+'</td><td>'+info[i].afa007+'</td><td><a url="no-info.html">帮扶详情</a></td><tr>';
+            }else if(selector=='.tab-3'){
+                html += '<tr><td>'+info[i].rownum+'</td><td>'+info[i].uus035+'</td><td>'+info[i].afa007+'</td><td><a url="no-info.html">帮扶详情</a></td><tr>';
+            }
+        }
+        $(selector).find('tbody').empty().html(html);
+    }
+
+    $('.by-right').on('click', '[url="no-info.html"]', function(){
+        $('.by-right').load('no-info.html');
+    });
+</script>

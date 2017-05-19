@@ -1,0 +1,74 @@
+.tanchu{
+	width: 100%;
+	height: 100%;
+	background: rgba(22, 17, 17, 0.8);
+	position:fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999999999;
+	display: none;
+}
+
+.motai{
+	width: 1000px;
+	height: 300px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -150px;
+}
+.motai .xiazai{
+	width: 410px;
+	height: 50px;
+	display: block;
+	background: rgba(78, 77, 78, 0.3);
+	margin-left: 290px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+	float: left;
+}
+.motai>a{
+	float: right;
+	width: 28px;
+	height: 28px;
+	background: red;
+	margin: 20px 20px 0 0;
+	background: url('../images/cuo.png');
+}
+.ioss{
+	width: 250px;
+	height: 170px;
+	float: left;
+	margin-top: 38px;
+	margin-left: 220px;
+	border-right: 1px solid #000;
+}
+.ioss>p{
+	color: #fff;
+	font-size: 17px;
+	text-indent: 8px;
+}
+.ioss>img{
+	margin-top: 15px;
+}
+.anzhuos{
+	width: 250px;
+	height: 170px;
+	float: left;
+	margin-top: 38px;
+}
+.anzhuos>p{
+	margin-left: 110px;
+	color: #fff;
+	text-indent: 35px;
+	font-size: 17px;
+}
+.anzhuos>a{
+	margin-left: 110px;
+	margin-top: 20px;
+	display: block;
+}

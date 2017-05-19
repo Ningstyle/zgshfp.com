@@ -1,0 +1,696 @@
+@mixin  size($width,$height,$back){
+	width:$width;
+	height:$height;
+	background:$back no-repeat;
+}
+@mixin margin($top,$left){
+	margin-top:$top;
+	margin-left:$left;
+}
+@mixin pad($top,$left){
+	padding-top:$top;
+	padding-left:$left;
+}
+@mixin pos($top,$left){
+	position:absolute;
+	top:$top;
+	left:$left;
+}
+@mixin font($font,$line){
+	font-size:$font;
+	line-height:$line;
+}
+@mixin border($color){
+	
+}
+.fl{
+	float:left;
+}
+ul,body,h2,p{
+	margin:0;
+	padding:0;
+}
+.show {
+	display:block;
+}
+.hide {
+	display:none;
+}
+.content{
+	@include size(100%,auto,none);
+	margin-top:108px;
+	margin-bottom:80px;
+	.hearts-head 	{
+			@include size(100%,310px,url(../images/banner.png));
+			margin-bottom:31px;
+		.hearts-nav 	{
+			margin:0 auto;
+			position:relative;
+			@include size(1200px,310px,none);
+		#hearts-right{
+			@include size(330px,200px,none);
+			position:absolute;
+			right:0px;
+			top:60px;
+			#hearts-add 	{
+				@include size(330px,80px,url(../images/herat-enow.png));
+				position:absolute;
+				right:0px;
+				top:0;
+				cursor:pointer;
+			}
+			#hearts-city 	{
+				@include size(330px,80px,url(../images/herat-nedd.png));
+				position:absolute;
+				right:0px;
+				top:100px;
+				cursor:pointer;
+			}
+
+		}	
+		}
+	}
+
+	.hearts-body {
+		@include size(1200px,100%,none);
+		margin:0 auto;
+		.hearts-more 	{
+		 @include size(720px,auto,none);
+		.hearts-need 	{
+			height:36px;
+			border-bottom:1px solid #eee;
+			position:relative;
+			.need-pos 	{
+				position:absolute;
+				right:0px;
+				top:0px;
+				
+				 color:#666;
+				.pos-pic	{
+				margin-top:13px;
+				margin-right:6px;
+				display:inline-block;
+				@include size(10px,15px,url(../images/pos.png));	
+				}
+				cursor:pointer;
+				.city 	{
+					 @include font(14px,40px);
+					 
+				}
+				
+				.country-all {
+					position:absolute;
+					z-index:900;
+					right:-6px;
+					top:24px;
+					@include size(338px,225px,url(../images/diag.png));
+					@include pad(28px,28px);
+					display:none;
+					li {
+						@include size(308px,20px,none);
+						@include pad(7px,0);
+						@include font(12px,20px);
+						border-bottom:1px solid #eee;
+						span {
+							color:#cd403b;
+							display:inline-block;
+							@include font(12px,20px);
+							width:54px;
+							height:20px;
+						}	
+						a {
+							float:left;
+							@include font(12px,20px);
+							color:#666;
+							margin-right:18px;
+						}
+						a:hover {
+							color:#cd403b;
+						}
+						.last	{
+						margin-right:0;
+						}
+					}
+				}
+				.show {
+					display:block;
+				}
+			}
+			.hearts-nav-add 	{
+				@include size(125px,auto,none);
+				@include font(18px,36px);
+				position:relative;
+				color:#666;
+				.need-line 	{
+					position:absolute;
+					right:0;
+					top:10px;
+					height:16px;
+					border-right:1px solid #d5d5d5;
+				}
+				.need-1 {
+					@include font(18px,36px);
+					height:36px;
+					height:36px;
+					font-family:"Microsoft YaHei";
+					font-style:normal;
+					
+				}	
+				.need-ico 	{
+					display:inline-block;
+					@include size(19px,16px,url(../images/heart.png));
+					margin-top:9px;
+					margin-left:10px;
+					margin-right:6px;
+					*margin-bottom:10px;
+				}
+				
+			}
+			.hearts-nav-add:hover	{
+				color:#cd403b;
+				.need-ico	{
+					@include size(19px,16px,url(../images/heart2.png));
+				}
+			}
+			.hearts-nav-city {
+				display:table;
+				@include size(125px,auto,none);
+				@include font(18px,36px);
+				font-family:"Microsoft YaHei";
+				font-style:normal;
+					color:#666;
+				.need-ico 	{
+					display:inline-block;
+					@include size(19px,16px,url(../images/heart.png));
+					margin-top:9px;
+					margin-left:10px;
+					margin-right:6px;
+					*margin-bottom:10px;
+				}
+				.need-2 {
+					@include font(18px,36px);
+					height:36px;
+					font-style:normal;
+					font-family:"Microsoft YaHei";
+				}	
+				
+			}
+			.hearts-nav-city:hover 	{
+				color:#cd403b;
+				.need-ico	{
+					@include size(19px,16px,url(../images/heart2.png));
+				}
+			}
+			.active 	{
+					@include font(18px,36px);
+				height:36px;
+				position:relative;
+				font-family:"Microsoft";
+				font-style:normal;
+					color:#cd403b;
+						.need-ico	{
+						@include size(19px,16px,url(../images/heart2.png));
+					}
+				}
+				
+		}
+		position:relative;
+		.pills 	{
+			.pills-link 	{
+				@include pad(0,12px);
+				height:34px;
+				.pills-text 	{
+					display:inline-block;
+					margin-left:24px;
+					margin-right:23px;
+					@include font(pills-sign,34px);
+					color:#666;
+				}
+				.active 	{
+					color:#cd403b;
+				}
+				
+			}
+				
+			.pills-content 	{
+				
+				@include size(720px,auto,none);
+				.pills-list 	{
+				border-top:1px solid #eee;
+					@include size(720px,299px,none);
+					.pills-left 	{
+						position:relative;
+						@include size(80px,100%,none);
+						a {
+							display:inline-block;
+							@include margin(20px,10px);
+							@include size(60px,60px,#eee);
+							border-radius:50%;
+						}
+						.left-hide 	{
+							display:none;
+							@include size(248px,156px,none);
+							background:url(../images/bg.png);
+							background-size:100%;
+							position:absolute;
+							left:66px;
+							top:18px;
+							padding-left:22px;
+							padding-top:6px;
+							color:#666;
+							z-index:999;
+							*zoom:1;
+							*background-repeat:no-repeat;
+							*background-position: center;
+							*background-size: 200%;
+							.hide-bg  {
+								display:hidden;
+								*display:block;
+								@include size(248px,156px,none);
+							}
+							h4 	{
+								margin-top:5px;
+								@include font(14px,26px);
+							}
+							.left-name 	{
+								@include font(12px,20px);
+							}
+							span 	{
+								position:absolute;
+								right:15px;
+								top:6px;
+								@include size(22px,30px,url(../images/zhen.png));
+							}
+						}
+					}
+					.pills-right 	{
+						@include size(640px,100%,none);
+						position:relative;
+						.pills-user 	{
+							position:relative;
+							margin-top:28px;
+							color:#fff;
+							.name 	{
+
+								@include font(16px,28px); color:#666;
+							}
+							.address 	{
+								padding-bottom:8px;
+								@include font(15px,26px);
+								height:26px;
+								color:#919090;
+								.detail-add-sign 	{
+									@include size(10px,16px,url(../images/posi.png));
+									margin-top:6px;
+								}
+								.detail-add {
+									margin-left:4px;
+									margin-right:4px;
+								}
+								border-bottom:1px solid #eee;
+								margin-bottom:5px;
+							}
+							.pills-sign 	{
+								position:absolute;
+								right:10px;
+								top:6px;
+								text-align:center;
+								color:#fff;
+								font:15px/40px "Microsoft Yahei";
+								color:#fff;
+								@include 	size(90px,40px,url(../images/enow.png));
+								cursor:pointer;
+							}
+							.first 	{
+								@include 	size(90px,40px,url(../images/enow.png));
+								color:#fff;
+							}
+						}
+						.user-detail 	{
+							display:block;
+							cursor:pointer;
+							.user-need 	{
+								@include font(15px,25px);
+								height:25px;
+								margin-bottom:3px;
+								.self 	{
+									color:#919090;
+									margin-right:10px;
+								}
+								.self-need 	{
+									color:#666;
+								}
+
+							}
+							.self-about 	{
+								@include font(15px,21px);
+								color:#666;
+								margin-bottom:16px;
+							}
+						}
+						.self-pic 	{
+							height:90px;
+							img 	{
+								margin-left:3px;
+								margin-right:12px;
+								@include size(90px,90px,none);
+								background:#eee;
+								cursor:pointer;
+							}
+						}
+						
+						.self-sign 	{
+							color:#919090;
+							position:absolute;
+							display:block;
+							bottom:0;
+							width:100%;
+							@include font(14px,32px);
+							.time 	{
+								padding-right:10px;
+								position:absolute;
+								right:0;
+								*position:absolute;
+								*right:0px;
+								*top:0px;
+							}
+							
+						}
+
+					}
+				}
+			.center 	{
+				display:block;
+				border-bottom:1px solid #eee;
+				border-top:1px solid #eee;
+				text-align:center;
+				@include font(14px,30px);
+				color:#cd403b;
+				height:32px;
+				margin-bottom:200px;
+			}
+			}
+
+			}
+			
+		}
+		.sect {
+				display:none;
+			}
+
+	.aside 	{
+		position:relative;
+		@include size(330px,auto,none);
+		.line-posi {
+			border-left:1px solid #eee;
+		}
+
+		.need-info 	{
+
+				@include font(18px,36px);
+				height:36px;
+				position:relative;
+				font-family:"Microsoft YaHei";
+				font-style:normal;
+				color:#cd403b;
+				cursor:pointer;
+				.need-ico 	{
+					display:inline-block;
+					@include size(19px,16px,url(../images/heart2.png));
+					margin-top:9px;
+					margin-left:10px;
+					margin-right:6px;
+					*margin-bottom:10px;
+				}
+				.need-1 {
+					@include font(18px,36px);
+					font-family:"Microsoft YaHei";
+					font-style:normal;
+					height:36px;
+				}	
+				.need-more 	{
+					color:#cd403b;
+					@include font(14px,40px);
+					font-weight:normal;
+
+				}
+				border-bottom:1px solid #eee;
+			}
+			.dis 	{
+			border-bottom:none;
+			}
+
+			.need-top 	{
+				border-left:1px solid #eee;
+			}
+			.aside-content 	{
+				@include pad(4px,0);
+				.aside-list 	{
+					@include pad(12px,0);
+					height:24px;
+					@include font(16px,24px);
+					border-bottom:1px solid #eee;
+					.aside-sign 	{
+						@include size(4px,6px,#eee);
+						margin-top:9px;
+						margin-right:7px;
+					}
+					.aside-list-info 	{
+						@include font(15px,24px);
+						height:24px;
+						color:#666;
+						
+						.aside-name 	{
+							color:#666;
+							margin-right:5px;
+						}
+						.aside-address 	{
+							color:#919090;
+							margin-right:5px;
+						}
+					}
+				}
+
+			}
+
+
+			.aside-second 	{
+				margin-top:48px;
+				border-bottom:none;
+
+			}
+			.info-list-all 	{
+				position:relative;
+				.last 	{
+					border-bottom:1px solid #eee;
+				}
+				.info-list 	{
+					height:200px;
+					border-top:1px solid #eee;
+					.info-head 	{
+						@include size(80px,100%,none);
+						a 	{
+							display:inline-block;
+							@include size(60px,60px,none);
+							background:#eee;
+							border-radius:50%;
+							@include margin(20px,10px);
+						}
+					}
+				.info-right	{
+					display:block;
+					@include size(250px,auto,none);
+						margin-top:20px;
+						.pills-user	{
+							padding-top:8px;
+							padding-bottom:8px;
+							border-bottom:1px solid #eee;
+							.name 	{
+								@include font(14px,28px);
+								display:block;
+								color:#666;
+							}
+							.address 	{
+								@include font(14px,26px);
+								
+								.detail-add-sign 	{
+									margin-top:6px;
+									@include size(10px,14px,url(../images/posi.png));
+								}
+								.detail-add 	{
+									@include font(14px,26px);
+									color:#919090;
+									margin-right:5px;
+								}
+							}
+
+						}
+						.user-detail 	{
+							padding-top:2px;
+							.user-need 	{
+								@include font(15px,33px);
+								.self 	{
+									color:#919090;
+									margin-right:10px;
+								}
+								.self-need 	{
+									color:#666;
+								}
+							}
+							.self-about 	{
+								@include font(15px,19px);
+								color:#666;
+							}
+						}
+
+					}
+				}
+
+			}
+			.bottom 	{
+				border-bottom:1px solid #eee;
+			}
+			.need-pic-list 	{
+					border-top:1px solid #eee;
+					padding-top:17px;
+					height:233px;
+					.need-pics 	{
+						padding:0 14px;
+						@include size(140px,auto,none);
+
+						img {
+							position:relative;
+							@include size(140px,140px,none);
+							display:block;	
+							cursor:pointer;
+							margin-bottom:6px;
+						}
+						.need-text 	{
+							@include font(15px,20px);
+							color:#666;
+						}
+						.need-add 	{
+							text-align:right;
+							@include font(12px,32px);
+							color:#919090;
+						}
+					}
+					.last 	{
+						padding-right:0;
+					}
+				}
+		}
+
+
+
+	}
+
+	
+	
+}
+.ad-le {
+	margin-left:10px;
+}
+	body {
+		position:relative;
+	}
+	.pic-pos {
+		@include size(100%,100%,rgba(0,0,0,.8));
+		@include pos(0,0);
+		position:fixed;
+		text-align:center;
+		display:none;
+		overflow:hidden;
+		z-index:10000;
+		.bg-pos {
+			@include size(700px,600px,rgba(0,0,0,.8));
+			@include pos(0,0);
+			padding:30px 90px;
+			border-radius:20px;
+			z-index:10004;
+		}
+		.pos-div {
+		position:absolute;
+		@include size(500px,460px,none);
+		overflow:hidden;
+		#pos-img {
+			position:absolute;
+			@include size(1500px,600px,none);
+			overflow:hidden;
+			left:0;
+			border-radius:5px;
+			z-index:10034;
+			.pos-1 {
+				position:absolute;
+				@include size(500px,460px,none);
+				left:0;
+				overflow:hidden;
+			.img1 {
+				position:absolute;
+				top:0;
+				left:0;
+				width:700px;
+				height:400px;
+				position:relative;
+				border-radius:5px;
+			}}
+			.pos-2	{
+				position:absolute;
+				@include size(500px,460px,none);
+				left:500px;
+				overflow:hidden;
+			.img2 {
+				position:absolute;
+				top:0;
+				left:0;
+				width:700px;
+				height:400px;
+				position:relative;
+				border-radius:5px;
+				z-index:10034;
+			}}
+			.pos-3	{
+				position:absolute;
+				@include size(500px,460px,none);
+				left:1000px;
+				overflow:hidden;	
+			.img3 {
+				position:absolute;
+				top:0;
+				left:0;
+				width:700px;
+				height:400px;
+				position:relative;
+				z-index:10034;
+				border-radius:5px;
+			}}
+		}
+		}
+		.sign-left {
+			@include pos(50%,200px);
+			@include size(40px,72px,url(../images/leftbtn.png));
+			margin-top:-36px;
+			z-index:10010;
+		}
+		.sign-right {
+			position:absolute;
+			right:200px;
+			top:50%;
+			@include size(40px,72px,url(../images/right1.png));
+			margin-top:-36px;
+			z-index:10010;
+		}
+		.close {
+			position:absolute;
+			right:100px;
+			top:50px;
+			@include size(28px,28px,url(../images/close.png));
+			background-size:100%;
+			z-index:10010;
+		}
+
+	}
+
+.single 	{
+		margin-top:141px;
+	}
